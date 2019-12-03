@@ -1,2 +1,2 @@
 # GithubKevin
-Tous les documents du projet vélo sont ici.
+Les différents projets se trouvent ici.
