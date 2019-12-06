@@ -8,3 +8,16 @@
     width: 100%;
     border: none;"
 }
+
+@media screen and (max-width: 575px){
+    #container128{
+        margin-left: 55px;
+    }
+#prenom18, #nom122, #naissance02, #adresse05{
+    width: 130px;
+}
+    .col-form-label {
+        margin-left: -45px;
+        margin-right: 30px;
+    }
+}

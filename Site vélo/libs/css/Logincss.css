@@ -8,3 +8,10 @@
     width: 25%;
     border: none;"
 }
+@media screen and (max-width: 767px){
+    #email122, #email123, #button55, #button56, #button57{
+        width: 200px;
+        text-align: center;
+        margin-left: -80px;
+    }
+}
