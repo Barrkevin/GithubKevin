@@ -21,4 +21,7 @@
         margin-right: 30px;
     }
 }
+.container{
+    min-height: 715px;
+}
 

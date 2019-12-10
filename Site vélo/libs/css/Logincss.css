@@ -15,3 +15,6 @@
         margin-left: -80px;
     }
 }
+.container{
+    min-height: 747px;
+}

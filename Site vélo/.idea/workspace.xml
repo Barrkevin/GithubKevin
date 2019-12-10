@@ -30,6 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSDémo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -75,7 +76,9 @@
       <workItem from="1575629260964" duration="1000" />
       <workItem from="1575875168979" duration="589000" />
       <workItem from="1575875770932" duration="4094000" />
-      <workItem from="1575879927796" duration="9671000" />
+      <workItem from="1575879927796" duration="13445000" />
+      <workItem from="1575962201887" duration="464000" />
+      <workItem from="1575962678767" duration="1385000" />
     </task>
     <servers />
   </component>
@@ -91,10 +94,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="722" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575541169958" />
-    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1575530609675">
+    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1575962689284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575530609675" />
+    <state x="739" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575962689284" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1575628613532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
