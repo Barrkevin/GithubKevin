@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/css/Logincss.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="libs/img/logo.png" alt="logo" class="rounded-circle"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="produits.html" id="nav3"><h5>Produits</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="nav4"><h5>Contact</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" id="nav5"><h5>Se connecter</h5></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="text-center mt-3">
+        <h1>Connexion</h1>
+        <hr id="hr15" class="mb-4">
+        <div class="row mt-3 w-25 mx-auto">
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Email" id="email122">
+            </div>
+            <div class="col-12 w-25 mx-auto mt-3">
+                <input type="text" class="form-control" placeholder="Mot de passe" id="email123">
+            </div>
+        </div>
+    </div>
+                <div class="col-6 w-25 mt-3 mx-auto">
+                    <button id="button55" type="button" class="btn btn-info btn-lg btn-block">Connexion</button>
+                </div>
+                <div class="col-6 w-25 mt-3 mx-auto">
+                    <button id="button56" type="button" class="btn btn-dark btn-lg btn-block">Mot de passe oublié</button>
+                </div>
+                <div class="col-6 w-25 mt-3 mx-auto">
+                <button id="button57" type="button" class="btn btn-light btn-lg btn-block" data-toggle="modal" data-target="#modal1">
+                    S'inscrire
+                </button>
+                </div>
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1titre" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal1titre">Page d'inscription</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Adresse email :</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mot de passe :</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Numéro de téléphone :</label>
+                                        <input type="Numéro" class="form-control" id="Numtel">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Adresse :</label>
+                                        <input type="Adresse" class="form-control" id="Adresse">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Code postal :</label>
+                                        <input type="Codepostal" class="form-control" id="CP">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-info">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid mt-5 bg-dark" id="hcontainer">
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-item nav-link" id="nav1" href="#"><h4>Conditions générales de vente</h4></a>
+            <a class="nav-item nav-link" id="nav2" href="https://fr-fr.facebook.com/login/"><h4>Facebook</h4></a>
+        </nav>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
