@@ -33,7 +33,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,7 +71,7 @@
       <workItem from="1576153296201" duration="124000" />
       <workItem from="1576153427801" duration="161000" />
       <workItem from="1576153647224" duration="55000" />
-      <workItem from="1576153709866" duration="1109000" />
+      <workItem from="1576153709866" duration="7970000" />
     </task>
     <servers />
   </component>
@@ -81,10 +87,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576153666258" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1576153411941">
+    <state x="463" y="165" key="SettingsEditor" timestamp="1576157346151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576153411941" />
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576157346151" />
     <state x="667" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576153286106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
