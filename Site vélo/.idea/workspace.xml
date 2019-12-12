@@ -30,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSDémo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -78,7 +78,10 @@
       <workItem from="1575875770932" duration="4094000" />
       <workItem from="1575879927796" duration="13445000" />
       <workItem from="1575962201887" duration="464000" />
-      <workItem from="1575962678767" duration="1385000" />
+      <workItem from="1575962678767" duration="2178000" />
+      <workItem from="1576073658188" duration="318000" />
+      <workItem from="1576074063765" duration="3383000" />
+      <workItem from="1576135176150" duration="824000" />
     </task>
     <servers />
   </component>
