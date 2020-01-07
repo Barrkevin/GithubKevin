@@ -1,0 +1,21 @@
+#navbiens, #navconnexion, #navcontact, #nav1, #nav2 {
+    color: white;
+}
+
+#hr15 {
+    height: 2px;
+    color: darkslategrey;
+    background-color: darkslategray;
+    width: 25%;
+    border: none;"
+}
+@media screen and (max-width: 767px){
+    #email122, #email123, #button55, #button56, #button57{
+        width: 200px;
+        text-align: center;
+        margin-left: -80px;
+    }
+}
+.container{
+    min-height: 747px;
+}
