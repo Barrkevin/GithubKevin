@@ -11,8 +11,8 @@ function initMap() {
         lng : 2.777221
     };
 
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content6 = "<h5>Ville d'Arras</h5> <p> Rue Emile Breton</p> <p>62000 Arras</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content6 = "<h5>Maison sur Arras</h5> <p> Rue Emile Breton</p> <p>62000 Arras</p>";
 
     let affichePlace6 = document.querySelector("#maps6");
 
@@ -51,6 +51,21 @@ function initMap() {
 
     marker6.addListener("click", function () {
         infos6.open(map);
+    });
+// Itinéraire
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: arras,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
     });
 }
 initMap();

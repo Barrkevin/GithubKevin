@@ -55,20 +55,19 @@ function initMap() {
     });
 
 // Itinéraire
-let directionsService = new google.maps.DirectionsService();
-let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
-let request = {
-    origin: lens,
-    destination: douai,
-    travelMode: google.maps.DirectionsTravelMode.DRIVING,
-    unitSystem: google.maps.DirectionsUnitSystem.METRIC
-};
-directionsService.route(request, function (response, status) {
-    if (status == google.maps.DirectionsStatus.OK) {
-        directionsDisplay.setDirections(response);
-        directionsDisplay.setOptions({ 'suppressMarkers': true });
-    }
-});
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: douai,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
+    });
 }
-
 initMap();

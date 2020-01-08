@@ -11,13 +11,13 @@ function initMap() {
         lng : 2.849335500000052
     };
 
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content5 = "<h5>Ville de Sallaumines</h5> <p> rue de quimper</p> <p>62430 Sallaumines</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content5 = "<h5>Domaine de Sallaumines</h5> <p> rue de quimper</p> <p>62430 Sallaumines</p>";
 
     let affichePlace5 = document.querySelector("#maps5");
 
     let map = new google.maps.Map( affichePlace5, {
-        zoom :10,
+        zoom :13,
         center : lens,
     });
 
@@ -50,6 +50,21 @@ function initMap() {
 
     marker5.addListener("click", function () {
         infos5.open(map);
+    });
+// Itinéraire
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: sallaumines,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
     });
 }
 initMap();

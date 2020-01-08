@@ -11,13 +11,13 @@ function initMap() {
         lng : 2.7746058000000176
     };
 
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content3 = "<h5>Ville de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content3 = "<h5>Villa de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
 
     let affichePlace3 = document.querySelector("#maps3");
 
     let map = new google.maps.Map( affichePlace3, {
-        zoom :10,
+        zoom :12,
         center : lens
     });
 
@@ -51,5 +51,21 @@ function initMap() {
     marker3.addListener("click", function() {
         infos3.open(map);
     });
+// Itinéraire
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: lievin,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
+    });
 }
+
 initMap();

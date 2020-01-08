@@ -11,15 +11,15 @@ function initMap() {
     };
 
     /*Ce qu'il sera écrit dans la fenêtre du curseur*/
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content2 = "<h5>Ville de Hénin-Beaumont</h5> <p> Rue de la murène</p> <p>62110 Hénin-Beaumont</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content2 = "<h5>Maison sur Hénin-Beaumont</h5> <p> Rue de la murène</p> <p>62110 Hénin-Beaumont</p>";
 
     let affichePlace2 = document.querySelector("#maps2");
     /* On créer un objet qui aura pour propriété un sélecteur */
 
     let map = new google.maps.Map( affichePlace2, {
         /* On déclare une nouvelle map, on lui dit de centrer la map sur Lille */
-        zoom :10,
+        zoom :11,
         center : lens
     });
 
@@ -53,5 +53,21 @@ function initMap() {
     marker2.addListener("click", function () {
         infos2.open(map);
     });
+// Itinéraire
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: henin,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
+    });
 }
+
 initMap();

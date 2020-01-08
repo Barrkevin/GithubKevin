@@ -11,13 +11,13 @@ function initMap() {
         lng : 2.8064679999999953
     };
 
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content4 = "<h5>Ville de Vimy</h5> <p> Rue du 8 mai</p> <p>62580 Vimy</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content4 = "<h5>Maison sur Vimy</h5> <p> Rue du 8 mai</p> <p>62580 Vimy</p>";
 
     let affichePlace4 = document.querySelector("#maps4");
 
     let map = new google.maps.Map( affichePlace4, {
-        zoom :10,
+        zoom :11,
         center : lens
     });
 
@@ -50,6 +50,21 @@ function initMap() {
 
     marker4.addListener("click", function () {
         infos4.open(map);
+    });
+// Itinéraire
+    let directionsService = new google.maps.DirectionsService();
+    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let request = {
+        origin: lens,
+        destination: vimy,
+        travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        unitSystem: google.maps.DirectionsUnitSystem.METRIC
+    };
+    directionsService.route(request, function (response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+            directionsDisplay.setOptions({ 'suppressMarkers': true });
+        }
     });
 }
 initMap();
