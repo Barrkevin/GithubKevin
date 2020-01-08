@@ -1,4 +1,5 @@
-function initMap() { /* Déclaration lat et long*/
+function initMap() {
+    /* Déclaration lat et long*/
     let lens = {
         lat : 50.4307477,
         lng : 2.8278407000000243
@@ -34,9 +35,8 @@ function initMap() { /* Déclaration lat et long*/
         lng : 2.777221
     };
 
-
     /*Ce qu'il sera écrit dans la fenêtre du curseur*/
-    let contenta = "<h5>Ville de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
     let content1 = "<h5>Ville de Douai</h5> <p> Rue d'Arras</p> <p>59500 Douai</p>";
     let content2 = "<h5>Ville de Hénin-Beaumont</h5> <p> Rue de la murène</p> <p>62110 Hénin-Beaumont</p>";
     let content3 = "<h5>Ville de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
@@ -44,14 +44,17 @@ function initMap() { /* Déclaration lat et long*/
     let content5 = "<h5>Ville de Sallaumines</h5> <p> rue de quimper</p> <p>62430 Sallaumines</p>";
     let content6 = "<h5>Ville d'Arras</h5> <p> Rue Emile Breton</p> <p>62000 Arras</p>";
 
-    let affichePlace = document.querySelector("#maps"); /* On créer un objet qui aura pour propriété un sélecteur */
+    let affichePlace = document.querySelector("#maps");
+    /* On créer un objet qui aura pour propriété un sélecteur */
 
-    let map = new google.maps.Map ( affichePlace, { /* On déclare une nouvelle map, on lui dit de centrer la map sur Lens */
+    let map = new google.maps.Map ( affichePlace, {
+        /* On déclare une nouvelle map, on lui dit de centrer la map sur Lens */
         zoom :10,
         center : lens
     });
 
-    let marker = new google.maps.Marker({  /* On attribut un curseur a l'objet lens qui se trouve dans la map */
+    let marker = new google.maps.Marker({
+        /* On attribut un curseur a l'objet lens qui se trouve dans la map */
         position : lens,
         map : map
     });
@@ -86,9 +89,9 @@ function initMap() { /* Déclaration lat et long*/
         map : map
     });
 
-
-    let infosa = new google.maps.InfoWindow ({ /* On déclare infoa, content reçoit content a,2 ou 3 etc qui sont déclaré plus haut */
-        content: contenta,
+    let infos0 = new google.maps.InfoWindow ({
+        /* On déclare info0, content reçoit content a,2 ou 3 etc qui sont déclaré plus haut */
+        content: content0,
         position : lens
     });
 
@@ -122,8 +125,9 @@ function initMap() { /* Déclaration lat et long*/
         position : arras
     });
 
-    marker.addListener("click", function () {  /* */
-        infosa.open(map);
+    marker.addListener("click", function () {
+        /* Ouverture de la popup avec les informations*/
+        infos0.open(map);
     });
 
     marker1.addListener("click", function () {
@@ -149,7 +153,5 @@ function initMap() { /* Déclaration lat et long*/
     marker6.addListener("click", function () {
         infos6.open(map);
     });
-
 }
-
 initMap();
