@@ -2,13 +2,13 @@ function initMap() {
     // les coordonnées de
 
     let lens = {
-        lat : 50.4307477,
-        lng : 2.8278407000000243
+        lat: 50.4307477,
+        lng: 2.8278407000000243
     };
 
     let vimy = {
-        lat : 50.3726709,
-        lng : 2.8064679999999953
+        lat: 50.3726709,
+        lng: 2.8064679999999953
     };
 
     let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
@@ -16,31 +16,31 @@ function initMap() {
 
     let affichePlace4 = document.querySelector("#maps4");
 
-    let map = new google.maps.Map( affichePlace4, {
-        zoom :11,
-        center : lens
+    let map = new google.maps.Map(affichePlace4, {
+        zoom: 11,
+        center: lens
     });
 
     let marker = new google.maps.Marker({
         /* On attribut un curseur a l'objet lens qui se trouve dans la map */
-        position : lens,
-        map : map
+        position: lens,
+        map: map
     });
 
     let marker4 = new google.maps.Marker({
-        position : vimy,
-        map : map
+        position: vimy,
+        map: map
     });
 
     let infos = new google.maps.InfoWindow({
         /* On déclare info0, content reçoit content a,2 ou 3 etc qui sont déclaré plus haut */
         content: content0,
-        position : lens,
+        position: lens,
     });
 
     let infos4 = new google.maps.InfoWindow({
         content: content4,
-        position : vimy,
+        position: vimy,
     });
 
     marker.addListener("click", function () {
@@ -53,7 +53,7 @@ function initMap() {
     });
 // Itinéraire
     let directionsService = new google.maps.DirectionsService();
-    let directionsDisplay = new google.maps.DirectionsRenderer({ 'map': map });
+    let directionsDisplay = new google.maps.DirectionsRenderer({'map': map});
     let request = {
         origin: lens,
         destination: vimy,
@@ -63,8 +63,9 @@ function initMap() {
     directionsService.route(request, function (response, status) {
         if (status == google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);
-            directionsDisplay.setOptions({ 'suppressMarkers': true });
+            directionsDisplay.setOptions({'suppressMarkers': true});
         }
     });
 }
+
 initMap();

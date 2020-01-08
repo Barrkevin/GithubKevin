@@ -1,38 +1,38 @@
 function initMap() {
     /* Déclaration lat et long*/
     let lens = {
-        lat : 50.4307477,
-        lng : 2.8278407000000243
+        lat: 50.4307477,
+        lng: 2.8278407000000243
     };
 
     let douai = {
-        lat : 50.367025,
-        lng : 3.072071000000051
+        lat: 50.367025,
+        lng: 3.072071000000051
     };
 
     let henin = {
-        lat : 50.41450340000001,
-        lng : 2.9629277999999886
+        lat: 50.41450340000001,
+        lng: 2.9629277999999886
     };
 
     let lievin = {
-        lat : 50.4172488,
-        lng : 2.7746058000000176
+        lat: 50.4172488,
+        lng: 2.7746058000000176
     };
 
     let vimy = {
-        lat : 50.3726709,
-        lng : 2.8064679999999953
+        lat: 50.3726709,
+        lng: 2.8064679999999953
     };
 
     let sallaumines = {
-        lat : 50.4220729,
-        lng : 2.849335500000052
+        lat: 50.4220729,
+        lng: 2.849335500000052
     };
 
     let arras = {
-        lat : 50.291048,
-        lng : 2.777221
+        lat: 50.291048,
+        lng: 2.777221
     };
 
     /*Ce qu'il sera écrit dans la fenêtre du curseur*/
@@ -47,82 +47,82 @@ function initMap() {
     let affichePlace = document.querySelector("#maps");
     /* On créer un objet qui aura pour propriété un sélecteur */
 
-    let map = new google.maps.Map ( affichePlace, {
+    let map = new google.maps.Map(affichePlace, {
         /* On déclare une nouvelle map, on lui dit de centrer la map sur Lens */
-        zoom :10,
-        center : lens
+        zoom: 10,
+        center: lens
     });
 
     let marker = new google.maps.Marker({
         /* On attribut un curseur a l'objet lens qui se trouve dans la map */
-        position : lens,
-        map : map
+        position: lens,
+        map: map
     });
 
     let marker1 = new google.maps.Marker({
-        position : douai,
-        map : map
+        position: douai,
+        map: map
     });
 
     let marker2 = new google.maps.Marker({
-        position : henin,
-        map : map
+        position: henin,
+        map: map
     });
 
     let marker3 = new google.maps.Marker({
-        position : lievin,
-        map : map
+        position: lievin,
+        map: map
     });
 
     let marker4 = new google.maps.Marker({
-        position : vimy,
-        map : map
+        position: vimy,
+        map: map
     });
 
     let marker5 = new google.maps.Marker({
-        position : sallaumines,
-        map : map
+        position: sallaumines,
+        map: map
     });
 
     let marker6 = new google.maps.Marker({
-        position : arras,
-        map : map
+        position: arras,
+        map: map
     });
 
-    let infos0 = new google.maps.InfoWindow ({
+    let infos0 = new google.maps.InfoWindow({
         /* On déclare info0, content reçoit content a,2 ou 3 etc qui sont déclaré plus haut */
         content: content0,
-        position : lens
+        position: lens
     });
 
-    let infos1 = new google.maps.InfoWindow ({
+    let infos1 = new google.maps.InfoWindow({
         content: content1,
-        position : douai
+        position: douai
     });
 
-    let infos2 = new google.maps.InfoWindow ({
+    let infos2 = new google.maps.InfoWindow({
         content: content2,
-        position : henin
+        position: henin
     });
 
-    let infos3 = new google.maps.InfoWindow ({
+    let infos3 = new google.maps.InfoWindow({
         content: content3,
-        position : lievin
+        position: lievin
     });
 
-    let infos4 = new google.maps.InfoWindow ({
+    let infos4 = new google.maps.InfoWindow({
         content: content4,
-        position : vimy
+        position: vimy
     });
 
-    let infos5 = new google.maps.InfoWindow ({
+    let infos5 = new google.maps.InfoWindow({
         content: content5,
-        position : sallaumines
+        position: sallaumines
     });
 
-    let infos6 = new google.maps.InfoWindow ({
+    let infos6 = new google.maps.InfoWindow({
         content: content6,
-        position : arras
+        position: arras
     });
 
     marker.addListener("click", function () {
@@ -154,4 +154,5 @@ function initMap() {
         infos6.open(map);
     });
 }
+
 initMap();
