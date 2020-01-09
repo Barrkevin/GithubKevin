@@ -21,10 +21,13 @@ function initMap() {
         center: lens
     });
 
+    let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+
     let marker = new google.maps.Marker({
         /* On attribut un curseur a l'objet lens qui se trouve dans la map */
         position: lens,
-        map: map
+        map: map,
+        icon: image
     });
 
     let marker3 = new google.maps.Marker({

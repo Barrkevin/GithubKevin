@@ -36,13 +36,13 @@ function initMap() {
     };
 
     /*Ce qu'il sera écrit dans la fenêtre du curseur*/
-    let content0 = "<h5>Agence de Lens</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content1 = "<h5>Ville de Douai</h5> <p> Rue d'Arras</p> <p>59500 Douai</p>";
-    let content2 = "<h5>Ville de Hénin-Beaumont</h5> <p> Rue de la murène</p> <p>62110 Hénin-Beaumont</p>";
-    let content3 = "<h5>Ville de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
-    let content4 = "<h5>Ville de Vimy</h5> <p> Rue du 8 mai</p> <p>62580 Vimy</p>";
-    let content5 = "<h5>Ville de Sallaumines</h5> <p> rue de quimper</p> <p>62430 Sallaumines</p>";
-    let content6 = "<h5>Ville d'Arras</h5> <p> Rue Emile Breton</p> <p>62000 Arras</p>";
+    let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
+    let content1 = "<h5>Appartement de Douai</h5> <p> Rue d'Arras</p> <p>59500 Douai</p>";
+    let content2 = "<h5>Maison de Hénin-Beaumont</h5> <p> Rue de la murène</p> <p>62110 Hénin-Beaumont</p>";
+    let content3 = "<h5>Villa de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
+    let content4 = "<h5>Maison de Vimy</h5> <p> Rue du 8 mai</p> <p>62580 Vimy</p>";
+    let content5 = "<h5>Domaine de Sallaumines</h5> <p> rue de quimper</p> <p>62430 Sallaumines</p>";
+    let content6 = "<h5>Maison de Arras</h5> <p> Rue Emile Breton</p> <p>62000 Arras</p>";
 
     let affichePlace = document.querySelector("#maps");
     /* On créer un objet qui aura pour propriété un sélecteur */
@@ -53,10 +53,13 @@ function initMap() {
         center: lens
     });
 
+    let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+
     let marker = new google.maps.Marker({
         /* On attribut un curseur a l'objet lens qui se trouve dans la map */
         position: lens,
-        map: map
+        map: map,
+        icon: image
     });
 
     let marker1 = new google.maps.Marker({

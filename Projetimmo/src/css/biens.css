@@ -2,33 +2,11 @@
     color: white;
 }
 
-#maps1{
+#maps1, #maps2, #maps3, #maps4, #maps5, #maps6 {
     width: 100%;
     height: 500px;
 }
 
-#maps2{
-    width: 100%;
-    height: 500px;
+#modaltitre1, #modaltitre2, #modaltitre3, #modaltitre4, #modaltitre5, #modaltitre6 {
+    padding-left: 35%;
 }
-
-#maps3{
-    width: 100%;
-    height: 500px;
-}
-
-#maps4{
-    width: 100%;
-    height: 500px;
-}
-
-#maps5{
-    width: 100%;
-    height: 500px;
-}
-
-#maps6{
-    width: 100%;
-    height: 500px;
-}
-

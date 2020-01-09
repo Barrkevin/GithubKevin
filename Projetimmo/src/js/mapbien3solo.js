@@ -1,48 +1,49 @@
 function initMap() {
-    /* Déclaration lat et long*/
+    // les coordonnées de
+
     let lens = {
         lat: 50.4307477,
         lng: 2.8278407000000243
     };
 
-    let douai = {
-        lat: 50.367025,
-        lng: 3.072071000000051
+    let lievin = {
+        lat: 50.4172488,
+        lng: 2.7746058000000176
     };
 
-    /*Ce qu'il sera écrit dans la fenêtre du curseur*/
     let content0 = "<h5>Agence Immobilette</h5> <p> Rue Louis Pasteur</p> <p>62300 Lens</p>";
-    let content1 = "<h5>Appartement sur Douai</h5> <p> Rue d'Arras</p> <p>59500 Douai</p>";
+    let content3 = "<h5>Villa de Liévin</h5> <p> Rue Emile Basly</p> <p>62800 Liévin</p>";
 
-    let affichePlace1 = document.querySelector("#maps1");
-    /* On créer un objet qui aura pour propriété un sélecteur */
+    let affichePlace3 = document.querySelector("#maps3");
 
-    let map = new google.maps.Map(affichePlace1, {
-        /* On déclare une nouvelle map, on lui dit de centrer la map sur Lens */
-        zoom: 10,
+    let map = new google.maps.Map(affichePlace3, {
+        zoom: 12,
         center: lens
     });
+
+    let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
 
     let marker = new google.maps.Marker({
         /* On attribut un curseur a l'objet lens qui se trouve dans la map */
         position: lens,
-        map: map
+        map: map,
+        icon: image
     });
 
-    let marker1 = new google.maps.Marker({
-        position: douai,
-        map: map,
+    let marker3 = new google.maps.Marker({
+        position: lievin,
+        map: map
     });
 
     let infos = new google.maps.InfoWindow({
         /* On déclare info0, content reçoit content a,2 ou 3 etc qui sont déclaré plus haut */
         content: content0,
-        position: lens
+        position: lens,
     });
 
-    let infos1 = new google.maps.InfoWindow({
-        content: content1,
-        position: douai
+    let infos3 = new google.maps.InfoWindow({
+        content: content3,
+        position: lievin
     });
 
     marker.addListener("click", function () {
@@ -50,16 +51,15 @@ function initMap() {
         infos.open(map);
     });
 
-    marker1.addListener("click", function () {
-        infos1.open(map);
+    marker3.addListener("click", function () {
+        infos3.open(map);
     });
-
 // Itinéraire
     let directionsService = new google.maps.DirectionsService();
     let directionsDisplay = new google.maps.DirectionsRenderer({'map': map});
     let request = {
         origin: lens,
-        destination: douai,
+        destination: lievin,
         travelMode: google.maps.DirectionsTravelMode.DRIVING,
         unitSystem: google.maps.DirectionsUnitSystem.METRIC
     };

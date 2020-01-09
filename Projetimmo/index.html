@@ -34,7 +34,7 @@
 </nav>
 
 <body>
-
+    <div class="loader"></div>
 <div class="container mt-5">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -93,7 +93,7 @@
     </div>
 
     <div class="container mt-2">
-        <div class="row">
+            <div class="row">
             <div class="col-12">
                 <div id="maps">
                 </div>
@@ -126,5 +126,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("1000"); })
+</script>
 </body>
 </html>
