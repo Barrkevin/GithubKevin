@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Site vélo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.templates" />
   </component>
@@ -72,6 +72,7 @@
       <workItem from="1578918549521" duration="113000" />
       <workItem from="1579006015083" duration="2000" />
       <workItem from="1579006047735" duration="1000" />
+      <workItem from="1579258217243" duration="171000" />
     </task>
     <servers />
   </component>

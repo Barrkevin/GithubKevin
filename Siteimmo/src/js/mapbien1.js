@@ -15,7 +15,7 @@ function initMap() {
     let content1 = "<h5>Appartement de Douai</h5> <p> Rue d'Arras</p> <p>59500 Douai</p>";
 
     let affichePlace1 = document.querySelector("#maps1");
-    /* On créer un objet qui aura pour propriété un sélecteur */
+    /* On crée un objet qui aura pour propriété un sélecteur */
 
     let map = new google.maps.Map(affichePlace1, {
         /* On déclare une nouvelle map, on lui dit de centrer la map sur Lens */
@@ -25,7 +25,7 @@ function initMap() {
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
+            { /*Permet de passer la map en noir et d'y afficher les routes, parking etc*/
                 featureType: 'administrative.locality',
                 elementType: 'labels.text.fill',
                 stylers: [{color: '#d59563'}]
@@ -137,7 +137,7 @@ function initMap() {
         infos1.open(map);
     });
 
-// Itinéraire
+// Itinéraire vers la maison
     let directionsService = new google.maps.DirectionsService();
     let directionsDisplay = new google.maps.DirectionsRenderer({'map': map});
     let request = {
