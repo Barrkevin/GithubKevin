@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP/Site vélo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.templates" />
   </component>
@@ -73,8 +73,6 @@
       <workItem from="1579006015083" duration="2000" />
       <workItem from="1579006047735" duration="1000" />
       <workItem from="1579258217243" duration="171000" />
-      <workItem from="1580125643422" duration="28000" />
-      <workItem from="1580125677551" duration="705000" />
     </task>
     <servers />
   </component>
@@ -82,10 +80,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580126793315">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1578573538617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580126793315" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578573538617" />
     <state x="795" y="443" key="NewPhpFileDialog" timestamp="1578297815718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
