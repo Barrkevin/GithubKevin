@@ -1,0 +1,225 @@
+CREATE TABLE `Energie` (
+`idEnergie` int(11) NOT NULL,
+`energie` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `Energie`
+--
+
+INSERT INTO `Energie` (`idEnergie`, `energie`) VALUES
+(1, 'electrique'),
+(2, 'hybride'),
+(3, 'essence'),
+(4, 'diesel');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `MarqueVehicule`
+--
+
+CREATE TABLE `MarqueVehicule` (
+`idMarqueVehicule` int(11) NOT NULL,
+`marque` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `MarqueVehicule`
+--
+
+INSERT INTO `MarqueVehicule` (`idMarqueVehicule`, `marque`) VALUES
+(1, 'BMW'),
+(2, 'Toyota'),
+(3, 'Peugeot'),
+(4, 'Audi');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `Modele`
+--
+
+CREATE TABLE `Modele` (
+`idModele` int(11) NOT NULL,
+`modele` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `Modele`
+--
+
+INSERT INTO `Modele` (`idModele`, `modele`) VALUES
+(1, 'x6'),
+(4, 'yaris'),
+(6, '208'),
+(7, 'a3');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `OptionsVehicule`
+--
+
+CREATE TABLE `OptionsVehicule` (
+`idOptionsVehicule` int(11) NOT NULL,
+`options` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `OptionsVehicule`
+--
+
+INSERT INTO `OptionsVehicule` (`idOptionsVehicule`, `options`) VALUES
+(1, 'toit ouvrant'),
+(2, 'jantes 19 pouces'),
+(3, 'cuir'),
+(5, 'climatisation'),
+(6, 'GPS');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `TypeUtilisateur`
+--
+
+CREATE TABLE `TypeUtilisateur` (
+`idTypeUtilisateur` int(11) NOT NULL,
+`typeUtilisateurcol` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `TypeVehicule`
+--
+
+CREATE TABLE `TypeVehicule` (
+`idTypeVehicule` int(11) NOT NULL,
+`typeVehiculecol` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `TypeVehicule`
+--
+
+INSERT INTO `TypeVehicule` (`idTypeVehicule`, `typeVehiculecol`) VALUES
+(1, '4x4'),
+(2, 'suv'),
+(3, 'berline'),
+(4, 'citadine'),
+(5, 'tourisme');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `Véhicule`
+--
+
+CREATE TABLE `Véhicule` (
+`idVéhicule` int(11) NOT NULL,
+`puissance` varchar(15) DEFAULT NULL,
+`stock` varchar(10) NOT NULL,
+`prixHt` varchar(15) NOT NULL,
+`dateMiseEnCirculation` varchar(20) NOT NULL,
+`kilomètre` varchar(15) DEFAULT NULL,
+`ville` varchar(45) NOT NULL,
+`Description` varchar(45) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create table utilisateur (
+    idutilisateur int not null,
+    nom varchar(20) not null,
+prenom varchar(20) not null,
+adresse varchar (100) not null,
+codepostal varchar(10) not null,
+mail varchar (50) not null,
+telephone varchar (20) not null);
+
+
+INSERT INTO `utilisateur`(`idutilisateur`, `nom`, `prenom`, `adresse`, `codepostal`, `mail`, `telephone`)
+VALUES ("1","radosz","kevin","rue des peupliers","65780","kevin.radosz@gmail.com","0689878532");
+INSERT INTO `utilisateur`(`idutilisateur`, `nom`, `prenom`, `adresse`, `codepostal`, `mail`, `telephone`)
+VALUES ("2","be,jamin","calais","rue bernard giraudault","64782","benjamin.calais@gmail.com","0654782354");
+INSERT INTO `utilisateur`(`idutilisateur`, `nom`, `prenom`, `adresse`, `codepostal`, `mail`, `telephone`)
+VALUES ("3","noemie","hoffman","rue du dauphin","62145","noemie.45@gmail.com","0654782135");
+INSERT INTO `utilisateur`(`idutilisateur`, `nom`, `prenom`, `adresse`, `codepostal`, `mail`, `telephone`)
+VALUES ("4","ophelie","boyle","rue de la murene","62145","ophelie.boyle@gmail.com","0652145786");
+
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `Energie`
+--
+ALTER TABLE `Energie`
+ADD PRIMARY KEY (`idEnergie`),
+ADD UNIQUE KEY `idEnergie_UNIQUE` (`idEnergie`);
+
+--
+-- Index pour la table `MarqueVehicule`
+--
+ALTER TABLE `MarqueVehicule`
+ADD PRIMARY KEY (`idMarqueVehicule`),
+ADD UNIQUE KEY `idMarqueVehicule_UNIQUE` (`idMarqueVehicule`);
+
+--
+-- Index pour la table `Modele`
+--
+ALTER TABLE `Modele`
+ADD PRIMARY KEY (`idModele`),
+ADD UNIQUE KEY `idModele_UNIQUE` (`idModele`);
+
+--
+-- Index pour la table `OptionsVehicule`
+--
+ALTER TABLE `OptionsVehicule`
+ADD PRIMARY KEY (`idOptionsVehicule`),
+ADD UNIQUE KEY `idOptionsVehicule_UNIQUE` (`idOptionsVehicule`);
+
+--
+-- Index pour la table `TypeUtilisateur`
+--
+ALTER TABLE `TypeUtilisateur`
+ADD PRIMARY KEY (`idTypeUtilisateur`),
+ADD UNIQUE KEY `idTypeUtilisateur_UNIQUE` (`idTypeUtilisateur`);
+
+--
+-- Index pour la table `TypeVehicule`
+--
+ALTER TABLE `TypeVehicule`
+ADD PRIMARY KEY (`idTypeVehicule`),
+ADD UNIQUE KEY `idTypeVehicule_UNIQUE` (`idTypeVehicule`);
+
+INSERT INTO `Véhicule`(`idVéhicule`, `puissance`, `stock`, `prixHt`, `dateMiseEnCirculation`, `kilomètre`, `ville`, `Description`)
+VALUES ("1","6cv","oui","10000","05/02/1980","180000","douai","très bon état");
+INSERT INTO `Véhicule`(`idVéhicule`, `puissance`, `stock`, `prixHt`, `dateMiseEnCirculation`, `kilomètre`, `ville`, `Description`)
+VALUES ("2","8cv","non","15000","08/06/1990", "20000","douai","bon état");
+INSERT INTO `Véhicule`(`idVéhicule`, `puissance`, `stock`, `prixHt`, `dateMiseEnCirculation`, `kilomètre`, `ville`, `Description`)
+VALUES ("3","4cv","oui", "9000", "05/04/2018","160000","lille","état neuve");
+INSERT INTO `Véhicule`(`idVéhicule`, `puissance`, `stock`, `prixHt`, `dateMiseEnCirculation`, `kilomètre`, `ville`, `Description`)
+VALUES ("4","10cv","non","12000","05/02/209","155000","lille","trés bon état");
+
+
+INSERT INTO `TypeUtilisateur`(`idTypeUtilisateur`, `typeUtilisateurcol`)
+VALUES ("1","particulier");
+INSERT INTO `TypeUtilisateur`(`idTypeUtilisateur`, `typeUtilisateurcol`)
+VALUES ("2","professionnel");
+
+
+-- Ajout d’un utilisateur
+INSERT INTO `utilisateur`(`idutilisateur`, `nom`, `prenom`, `adresse`, `codepostal`, `mail`, `telephone`)
+VALUES ("5", "marc","eremus", "rue de la grange","62760","mar.eremusgmail.com", "0688769000");
+
+
+-- Sélectionner véhicule prix compris entre 8000 et 15000 dont la ville est lille avec l’ordre de prix croissant
+SELECT * FROM `Véhicule` WHERE `prixHt` between 8000 and 15000 and ville="lille" order by prixht DESC;
+
+
+-- Sélectionner les véhicules agés de plus de 20 ans dans la ville de douai
+select* from véhicule where ville="douai" order by datemiseencirculation asc;
+
+-- Modifier nombre de km pour les véhicules ayant plus de 150000
+UPDATE Véhicule SET kilomètre = 99000 WHERE Kilomètre > 150000;

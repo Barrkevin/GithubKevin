@@ -1,0 +1,8 @@
+-- Afficher le nombre de stagiaire qui font la formation wwwm
+SELECT COUNT(*) FROM Personne as p, Fonction as f, classe as c, diplôme as d , classepersonne as cp
+WHERE libellefonction = «Stagiaire»
+AND p.idpersonne = cp.idpersonne
+AND c.idclasse = cp.idclasse
+AND c.iddiplome = d.iddiplome
+AND p.idfonction = f.idfonction
+AND d.intitulediplome = « WWM »

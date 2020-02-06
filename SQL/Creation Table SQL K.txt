@@ -1,0 +1,335 @@
+-- Suppression de la Base si elle existe
+DROP DATABASE IF EXISTS blog;
+
+
+
+-- CREATION de la base blog
+CREATE DATABASE blog;
+
+
+
+-- ON UTILISE LA BASE BLOG
+USE blog;
+
+
+
+-- Creation table type utilisateur
+CREATE TABLE TypeUtilisateur(idTypeUtilisateur INT NOT NULL AUTO_INCREMENT,
+libelleType VARCHAR(255),
+PRIMARY KEY(idTypeUtilisateur))
+ENGINE=innoDB;
+
+
+
+-- Creation table utilisateur
+CREATE TABLE Utilisateur (IdUtilisateur INT NOT NULL AUTO_INCREMENT,
+    Login VARCHAR(256) NOT NULL,
+    DateNaissance DATE NULL,
+    MotDePasse VARCHAR(20) NOT NULL,
+    Nom VARCHAR(30) NOT NULL,
+    Prenom VARCHAR(30) NOT NULL,
+    IdTypeUtilisateur INT NOT NULL,
+    PRIMARY KEY (IdUtilisateur),
+    UNIQUE INDEX IdUtilisateur_UNIQUE(IdUtilisateur ASC),
+    INDEX fk_TypeUtilisateur_idx (IdTypeUtilisateur ASC),
+    CONSTRAINT fk_TypeUtilisateur
+    FOREIGN KEY (IdTypeUtilisateur)
+    REFERENCES BLOG.TypeUtilisateur(idTypeUtilisateur)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE=innoDB;
+
+
+
+-- Creation table statut
+CREATE TABLE Statut (IdStatut INT NOT NULL AUTO_INCREMENT,
+    LibelleStatut VARCHAR(50),
+    PRIMARY KEY (IdStatut))
+ENGINE=innoDB;
+
+
+
+-- Creation table media
+CREATE TABLE Media(
+IdMedia INT UNSIGNED NOT NULL AUTO_INCREMENT,
+Media VARCHAR(30) NOT NULL,
+PRIMARY KEY(IdMedia)
+);
+
+
+
+-- Creation table typemedia
+CREATE TABLE TypeMedia(idTypeMedia INT NOT NULL AUTO_INCREMENT,
+libelleType VARCHAR(20) NOT NULL,
+PRIMARY KEY(idTypeMedia));
+
+
+
+-- Creation table article
+CREATE TABLE Article (
+IdArticle INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (IdArticle),
+    Titre VARCHAR(256) NOT NULL,
+    CreationDate DATE,
+    ModificationDate DATE,
+IdAuteur INT NOT NULL,
+    Description VARCHAR(200),
+    Text VARCHAR(200),
+IdStatut INT NOT NULL,
+IdCategorie INT NOT NULL,
+FOREIGN KEY (IdAuteur) REFERENCES BLOG.Utilisateur(IdTypeUtilisateur),
+FOREIGN KEY (IdStatut) REFERENCES BLOG.Statut(IdStatut),
+FOREIGN KEY (IdCategorie) REFERENCES BLOG.Categorie(IdCategorie));
+
+
+
+-- Creation table article media
+CREATE TABLE ArticleMedia(IdArticleMedia INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (IdArticleMedia),
+                          IdMedia INT NOT NULL,
+                          IdArticle INT NOT NULL,                        
+FOREIGN KEY (IdMedia) REFERENCES BLOG.Media(IdMedia),
+FOREIGN KEY (IdArticle) REFERENCES BLOG.Article(IdArticle));
+
+
+
+-- Creation table categorie
+CREATE TABLE Categorie(idCategorie INT NOT NULL AUTO_INCREMENT,
+typeCategorie VARCHAR(255) NOT NULL,
+PRIMARY KEY(idCategorie),
+sousCategorie INT,
+FOREIGN KEY(sousCategorie)
+REFERENCES Categorie(idCategorie))
+ENGINE=innoDB;
+
+
+
+-- Creation table jaime
+CREATE TABLE Jaime(idJaime INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (IdJaime),
+                   IdAuteur INT NOT NULL,
+                   IdArticle INT NOT NULL,
+                   IdCommentaire INT NOT NULL,
+FOREIGN KEY (IdAuteur) REFERENCES BLOG.Utilisateur(IdTypeUtilisateur),
+FOREIGN KEY (IdArticle) REFERENCES BLOG.Statut(IdArticle),
+FOREIGN KEY (IdCommentaire) REFERENCES BLOG.Categorie(IdCommentaire));
+
+
+
+
+-- Creation table commentaire
+CREATE TABLE Commentaire(idCommentaire INT NOT NULL AUTO_INCREMENT,
+texte TEXT NOT NULL,
+dateCreation DATE NOT NULL,
+PRIMARY KEY(idCommentaire),
+auteur INT,
+FOREIGN KEY(auteur)
+REFERENCES Utilisateur(idUtilisateur));
+
+
+-- INSERTION DES TYPES DE STATUT
+INSERT INTO Statut(libelleStatut) VALUES("Publié");
+INSERT INTO Statut(libelleStatut) VALUES("Brouillon");
+INSERT INTO Statut(libelleStatut) VALUES("Non publié");
+INSERT INTO Statut(libelleStatut) VALUES("En attente de validation");
+
+
+
+-- INSERTION DES TYPES D'UTILISATEUR INSCRIT, CONTRIBUTEUR, ADMINISTRATEUR
+INSERT INTO TypeUtilisateur(libelleType) VALUES("Inscrit");
+INSERT INTO TypeUtilisateur(libelleType) VALUES("Contributeur");
+INSERT INTO TypeUtilisateur(libelleType) VALUES("Administrateur");
+
+
+
+-- INSERTION TYPE MEDIA IMAGE, VIDEO
+INSERT INTO TypeMedia(libelleType) VALUES("Image");
+INSERT INTO TypeMedia(libelleType) VALUES("Video");
+INSERT INTO TypeMedia(libelleType) VALUES("Document");
+
+
+
+-- UPDATE LE TYPE UTILISATEUR INSCRIT À VISITEUR
+UPDATE TypeUtilisateur SET libelletype = "Visiteur" WHERE libelletype = "Inscrit";
+
+
+
+-- SUPPRESSION DES STATUT DE "EN ATTENTE DE VALIDATION"
+DELETE FROM Statut WHERE libelleStatut = "En attente de validation";
+
+
+
+-- SELECTIONNER TOUT DANS TypeMedia
+SELECT * from TypeMedia;
+
+
+
+-- LE NOMBRE DE STATUT DANS LA TABLE Statut
+SELECT COUNT(*) FROM Statut;
+
+
+
+-- CREATION D'UN ALIAS
+SELECT COUNT(*) AS "Nombre de statuts" FROM Statut;
+
+
+
+-- CREATION D'UTILISATEUR
+INSERT INTO Utilisateur(login, dateNaissance, motDePasse, nom, prenom,  idTypeUtilisateur) 
+VALUES ("kev", "1992-11-08", "azerty", "RADOSZ", "Kevin", 3);
+INSERT INTO Utilisateur(login, dateNaissance, motDePasse, nom, prenom,  idTypeUtilisateur) 
+VALUES ("Ben", "1990-07-19", "azerty1", "CALAIS", "Benjamin", 2);
+INSERT INTO Utilisateur(login, dateNaissance, motDePasse, nom, prenom,  idTypeUtilisateur) 
+(3, 'Fran', '1987-05-24', 'azerty2', 'Taisne', 'François', 1);
+
+
+
+-- Afficher par ordre alpha des utilisateurs
+SELECT* FROM Utilisateur order by login ASC;
+
+
+
+-- Afficher par login
+SELECT* FROM Utilisateur WHERE IdTypeUtilisateur = 3;
+
+
+
+-- Rechercher login & mot de passe des administrateurs
+SELECT login as "pseudo", motdepasse as "mdp" from utilisateur WHERE idtypeutilisateur = 3;
+
+
+
+-- Récupérer l'id type utilisateur
+SELECT  IdTypeUtilisateur FROM TypeUtilisateur WHERE LibelleType = "Administrateur";
+
+
+
+-- Récupérer le pseudo, mdp et le statut
+SELECT Login as "Pseudo", MotDePasse as "mdp",LibelleType as "Statut" from Utilisateur
+INNER JOIN TypeUtilisateur WHERE Utilisateur.IdTypeUtilisateur = Typeutilisateur.IdTypeUtilisateur;
+
+
+
+-- Regrouper
+SELECT login, count(*) FROM utilisateur GROUP BY login;
+
+
+
+-- Insertion d'un article
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("1", "Voiture", "2020/01/19", "2020/01/20", "1", "Image d'une voiture", "Une voiture rouge", "1", "2");
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("2", "Bus", "2020/01/10", "2020/01/15", "2", "Image d'un bus", "Un bus bleu", "2", "1");
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("3", "Bateau", "2020/01/05", "2020/01/07", "1", "Image d'un bateau", "Un grand bateau", "3", "2");
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("4", "Avion", "2020/01/01", "2020/01/18", "1", "Image d'un avion", "Un avion orange", "1", "1");
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("5", "Moto", "2020/01/01", "2020/01/19", "1", "Image d'une moto", "Une moto grise", "1", "1");
+insert into article (idarticle, titre, creationdate, modificationdate, idauteur, description, text, idstatut, idcategorie)
+values ("6", "Train", "2020/01/01", "2020/01/20", "1", "Image d'un train", "Un train blanc", "1", "1");
+
+
+
+-- Insertion d'un commentaire
+insert into commentaire (idcommentaire, texte, datecreation, Auteur)
+Values ("1", "Pas mal ce bus", "2020/01/19", "2");
+insert into commentaire (idcommentaire, texte, datecreation, Auteur)
+Values ("2", "Pas mal ce blog", "2020/01/16", "3");
+insert into commentaire (idcommentaire, texte, datecreation, Auteur)
+Values ("3", "Pas mal ce style d'article", "2020/01/18", "2");
+
+-- Insertion d'une catégorie Public
+INSERT INTO Categorie(typeCategorie) VALUES ("Public");
+
+
+-- Insertion sous catégorie Public
+insert INTO categorie (idcategorie, typecategorie, souscategorie)
+values ("2", "Grand public", "2");
+insert INTO categorie (idcategorie, typecategorie, souscategorie)
+values ("3", "Petit public", "3");
+
+
+-- Insertion article media
+INSERT INTO Article_Media(media, article) VALUES ("1","1");
+INSERT INTO Article_Media(media, article) VALUES ("2","2");
+
+
+-- Insetion jaime
+insert into jaime (idjaime, idauteur, idarticle, idcommentaire)
+Values ("1", "2", "2", "1");
+insert into jaime (idjaime, idauteur, idarticle, idcommentaire)
+Values ("1", "2", "2", "1");
+insert into jaime (idjaime, idauteur, idarticle, idcommentaire)
+Values ("3", "1", "1", "3");
+
+
+
+-- Insertion d'un media
+insert into media (idmedia, media)
+Values ("1","Image");
+insert into media (idmedia, media)
+Values ("2","Video");
+
+
+
+-- Trouver le dernier article publié
+SELECT * FROM Article WHERE IdStatut in (SELECT IdStatut FROM Statut WHERE LibelleStatut = "Publié")
+ORDER BY CreationDate ASC LIMIT 0,1;
+
+
+
+-- Trouver tous les articles commençant par la lettre "a"
+SELECT * FROM Article WHERE Titre Like "A%";
+
+
+
+-- Remplacer les lettres A par Z dans les titres dans article
+Update article SET Titre = Replace(Titre, "A", "Z");
+
+
+
+-- Remplacer la première lettre du titre de l'article
+UPDATE Article SET titre = REPLACE (titre, substring,(titre,1,1),"Z") WHERE titre like "A%";
+
+
+
+-- Insertion d'un utilisateur
+insert into utilisateur (idutilisateur, login, DateNaissance, motdepasse, nom, prenom, idtypeutilisateur)
+Values ("1", "Fran", "1987/05,24", "azerty2", "Taisne", "François", "3");
+
+
+
+-- Supprimer les utilisateurs qui n'ont pas publié d'article
+DELETE from utilisateur where idutilisateur not in (select idauteur from article)
+and idutilisateur not in (select idauteur from commentaire);
+
+
+
+-- AFFICHER l'article le plus populaire (celui qui a le plus de j'aime)
+select titre count as "total" from article, jaime ORDER BY total where article.idarticle = jaime.idarticle
+group by idarticle desc limit 0,1;. Ne marche pas
+
+ 
+
+-- Modifier le mot de passe de l'administrateur
+UPDATE utilisateur SET motdepasse = "azerty18" WHERE idutilisateur = "1";
+
+
+
+-- Afficher le titre, la catégorie et les images des articles d'une catgéorie
+SELECT Titre, TypeCategorie FROM Article, Categorie
+WHERE Article.IdCategorie = Categorie.IdCategorie;
+
+
+
+-- Afficher les 3 derniers articles publiés
+SELECT* FROM article WHERE idstatut = "1" ORDER BY creationdate DESC limit 3;
+
+
+
+-- Afficher le titre, la description et le nom de l'auteur des articles publiés par l'administrateur
+SELECT a.Titre AS "Titre", a.description AS "Description", u.Login AS "Auteur"
+FROM Article AS a INNER JOIN utilisateur AS u ON a.IdAuteur = u.IdUtilisateur WHERE IdTypeUtilisateur IN
+(SELECT IdTypeUtilisateur FROM TypeUtilisateur WHERE LibelleType = "Administrateur");
+
+
+-- Alter table
+alter table article add column jaime int not null default (0)

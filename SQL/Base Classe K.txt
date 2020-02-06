@@ -1,0 +1,106 @@
+-- Suppression de la Base si elle existe
+DROP DATABASE IF EXISTS centre;
+
+
+-- Creation de la base centre
+CREATE DATABASE centre;
+
+
+-- On utilise la base cente
+USE centre;
+
+
+-- Creation table stagiaire
+Create table stagiaire (
+idstagiaire int not null auto_increment,
+Nom VARCHAR(30) not null,
+Prenom VARCHAR(30) not null,
+Datenaissance DATE not null,
+Primary key(idstagiaire));
+
+
+-- Creation table professeur
+create table professeur(
+idprofesseur int not null auto_increment,
+Nom VARCHAR(30) not null,
+Prenom VARCHAR(30) not null,
+Datenaissance DATE not null,
+PRIMARY KEY (idprofesseur));
+
+
+-- Creation table profclasse
+create table profclasse(
+idprofclasse int not null auto_increment,
+Nomprofesseur VARCHAR(30) not null,
+Prenomprofesseur VARCHAR(30) not null,
+Classeprofesseur VARCHAR(30) not null,
+PRIMARY KEY (idprofclasse));
+
+-- Creation table lieu
+Create table lieu (
+idlieu int not null auto_increment,
+Nomville VARCHAR (30),
+Numcodepostal int not null,
+Nomrue VARCHAR(30) not null,
+Numrue INT not null,
+Primary key(idlieu));
+
+
+-- Creation table Salle
+Create table salle (
+idsalle int not null auto_increment,
+Nombatiment VARCHAR(30) not null,
+Numetage INT not null,
+Numsalle INT not null,
+Primary key(idsalle));
+
+
+-- Insertion de stagiaire
+Insert into stagiaire (idstagiaire, Nom, Prenom, Datenaissance)
+VALUES ("1", "Radosz", "Kevin", "1992/11/08");
+Insert into stagiaire (idstagiaire, Nom, Prenom, Datenaissance)
+VALUES ("2", "Leclercq", "Benjamin", "1990/07/12");
+Insert into stagiaire (idstagiaire, Nom, Prenom, Datenaissance)
+VALUES ("3", "Carré", "Juliette", "1994/02/18");
+
+
+-- Insertion professeur
+Insert into professeur (idprofesseur, Nom, Prenom, Datenaissance)
+VALUES ("1", "Radosz", "Michel", "1980/09/18");
+Insert into professeur (idprofesseur, Nom, Prenom, Datenaissance)
+VALUES ("2", "Taisne", "Thierry", "1970/07/04");
+Insert into professeur (idprofesseur, Nom, Prenom, Datenaissance)
+VALUES ("3", "Calais", "Mathilde", "1975/18/14");
+
+
+-- Insertion profclasse
+insert into profclasse (idprofclasse, Nomprofesseur, prenomprofesseur, classeprofesseur)
+values ("1", "Radosz", "Kevin", "5B");
+insert into profclasse (idprofclasse, Nomprofesseur, prenomprofesseur, classeprofesseur)
+values ("2", "Radosz", "Kevin", "3B");
+insert into profclasse (idprofclasse, Nomprofesseur, prenomprofesseur, classeprofesseur)
+values ("3", "Taisne", "Thierry", "6A");
+
+
+
+
+
+
+
+
+-- CREATION D'UNE TABLE CLASSE
+CREATE table classe (idclasse int not null auto_increment,
+    nomclasse varchar(50) not null,
+    capacite int null,
+    idlieu int not null,
+    idresponsable int not null,
+    iddiplome int not null,
+    dateexamen date not null,
+    dureeexamen int null)
+ENGINE=INNODB;
+
+
+    foreign key (idlieu) references lieu (idlieu),
+    foreign key (idresponsable),
+    foreign key (iddiplome),
+    PRIMARY KEY (idclasse))
