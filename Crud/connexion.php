@@ -1,3 +1,34 @@
+<?php
+session_start();
+
+require "fonction.php";
+
+
+
+if(isset($_POST['formconnexion'])) {
+    $mailconnect = htmlspecialchars($_POST['mailconnect']);
+    $mdpconnect = ($_POST['mdpconnect']);
+    if(!empty($mailconnect) AND !empty($mdpconnect)) {
+        $requser = $db->prepare("SELECT * FROM membres WHERE mail = ? AND motdepasse = ?");
+        $requser->execute(array($mailconnect, $mdpconnect));
+        $userexist = $requser->rowCount();
+        if($userexist == 1) {
+            $userinfo = $requser->fetch();
+            $_SESSION['id'] = $userinfo['id'];
+            $_SESSION['pseudo'] = $userinfo['pseudo'];
+            $_SESSION['mail'] = $userinfo['mail'];
+            $_SESSION['role'] = $userinfo['role_id'];
+            header("Location: index.php");
+        } else {
+            $erreur = "Mauvais mail ou mot de passe !";
+        }
+    } else {
+        $erreur = "Tous les champs doivent être complétés !";
+    }
+}
+?>
+
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -14,12 +45,11 @@
 <body>
 <div class="container mt-5">
     <form id="container128" class="offset-sm-2 col-8 bg-white border border-secondary" method="POST"
-          action="methodeinscription.php">
+          action="">
         <div class="p-5">
             <h2 class="text-center">
                 <p>Connexion</p></h2>
             <hr id="hr16" class="mb-4">
-
 
             <div class="form-group row">
                 <label for="mail" class="col-4 col-form-label">Email :</label>
@@ -45,11 +75,10 @@
         </div>
     </form>
     <?php
-    if (isset($erreur)) {
-        echo ".$erreur.";
+    if(isset($erreur)) {
+        echo '<font color="red">'.$erreur."</font>";
     }
     ?>
-
 </div>
 
 <!-- Optional JavaScript -->

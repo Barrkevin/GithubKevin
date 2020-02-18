@@ -1,0 +1,12 @@
+#navclub, #navmeeting, #navcompet, #navgalerie, #navboutique, #navliens, #navcontact, #navfacebook, #navconnexion, #navinscription, #presentation, #deco {
+    color: white;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+}
+
+#textsit, #textphoto {
+    text-align: center;
+}

@@ -1,23 +1,7 @@
 <?php
 
-require "config.php";   /*On appelle le fichier config*/
+require "fonction.php";   /*On appelle le fichier config*/
 
-/*var_dump($_POST);*/
-
-
-function connect()
-{
-    try {
-        $db = new PDO('mysql:host=' . LOCALHOST . ';dbname=' . DATABASE . ';charset=utf8', USER, MDP);
-        /*echo 'ok';*/
-        /*$db -> setAttribute ( PDO :: ATTR_ERRMODE , PDO :: ERRMODE_EXCEPTION );*/
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
-
-/*$id=0; */   /*Comme ce sont des variables il faut les initialiser*/
 
 
 if (isset($_POST["id"])) {
@@ -53,11 +37,6 @@ $db = connect();
 
 $modif = "UPDATE products SET name=:nom, description=:descript, price=:prix, category_id=:categ, image=:picture WHERE products.id=" . $id;
 
-
-/*echo $id;
-echo $nname;
-echo $ddescription;
-echo $pprice;*/
 
 
 $req = $db->prepare($modif);            /*-> veut dire va chercher la méthode de l'objet*/

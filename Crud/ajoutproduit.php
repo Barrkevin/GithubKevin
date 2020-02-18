@@ -19,11 +19,11 @@
             <h2 class="text-center"><p>Ajout d'un produit</p></h2>
             <hr id="hr16" class="mb-4">
 
-            <!-- <div class="form-group row">
+             <div class="form-group row">
                 <div class="col-8">
-                    <input id="nom122" type="text" name="id" class="form-control d-none" value="<?php /*echo $id;*/ ?>">
+                    <input id="nom122" type="text" name="id" class="form-control d-none" value="<?php echo $id ?>">
                 </div>
-            </div>-->
+            </div>
 
             <div class="form-group row">
                 <label for="nom122" class="col-4 col-form-label">Nom:</label>
@@ -57,14 +57,14 @@
             <div class="form-group row">
                 <label for="picture" class="col-4 col-form-label">Image:</label>
                 <div class="col-8">
-                    <input name="image" type="file">
+                    <input name="picture" type="file">
                 </div>
             </div>
 
             <button type="submit" class="btn btn-warning w-100">
                 Envoyer
             </button>
-            <a href="index.php">
+            <a href="profil.php">
                 <button type="button" class="btn btn-primary w-100 mt-2">
                     Retour
                 </button>

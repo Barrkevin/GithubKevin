@@ -1,35 +1,16 @@
 <?php
-require "config.php";   /*On appelle le fichier config*/
+require "fonction.php";
 
-function connect()
-{
-    try {
-        $db = new PDO('mysql:host=' . LOCALHOST . ';dbname=' . DATABASE . ';charset=utf8', USER, MDP);
-        /*echo 'ok';*/
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
 
 if (isset($_GET["id"])) {
     if (!empty($_GET)) {
-        $id = htmlspecialchars(trim($_GET["id"]));     /*On récupère l'id de l'objet sélectionné dans le tableau*/
+        $id = htmlspecialchars(trim($_GET["id"]));
     }
 }
-//var_dump($_GET);
 
-/* Stockage dans une variable */
-$db = connect();
 
-/*On sélectionne toutes les données de la table products se trouvant dans la base de données */
-/*$sql="SELECT * FROM products ";*/
-
-/*Pour aller chercher quelque chose de précis :*/
 $sql = "select products.id as pid,products.name as pname,products.description,products.price,categories.name as cname,image,categories.id from products
 inner join categories on products.category_id = categories.id where products.id = :ids";
-
-/*On sélectionne la table products, on va chercher l'id on lui attribu un nom, en l'occurence ici "pid"*/
 
 
 $req = $db->prepare($sql);  /*Prépare une requête SQL à être exécuter par la méthode PDO vu plus au dessus*/
@@ -118,7 +99,7 @@ $data = $req->fetch();
             <button type="submit" class="btn btn-warning w-100">
                 Envoyer
             </button>
-            <a href="index.php">
+            <a href="profil.php">
                 <button type="button" class="btn btn-primary w-100 mt-2">
                     Retour
                 </button>

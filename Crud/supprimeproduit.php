@@ -1,5 +1,5 @@
 <?php
-require "config.php";
+require "fonction.php";
 
 /*var_dump($_GET);*/
 
@@ -9,18 +9,6 @@ if (isset($_GET['id'])) {
     }
 }
 
-function connect()
-{
-    try {
-        $db = new PDO('mysql:host=' . LOCALHOST . ';dbname=' . DATABASE . ';charset=utf8', USER, MDP);
-        /*echo 'ok';*/
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
-
-$db = connect();
 
 $sql = "delete from products where id=:ids";
 /*IDS --> Pour vérifier que rien n'a été injecté*/
@@ -37,5 +25,3 @@ if ($req->fetch() == 0) {
 } else {
     echo "Suppression impossible";
 }
-
-/*count permet de compter les éléments d'un tableau ou d'un objet*/

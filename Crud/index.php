@@ -1,37 +1,17 @@
 <?php
-require "config.php";   /*On appelle le fichier config*/
-
-function connect()
-{
-    try {
-        $db = new PDO('mysql:host=' . LOCALHOST . ';dbname=' . DATABASE . ';charset=utf8', USER, MDP);
-        /*echo 'ok';*/
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
-
-/* Stockage dans une variable */
-$db = connect();
-
-/*On sélectionne toutes les données de la table products se trouvant dans la base de données */
-/*$sql="SELECT * FROM products ";*/
+session_start();
+require "fonction.php";
 
 /*Pour aller chercher quelque chose de précis :*/
 $sql = "select products.id as pid,products.name as pname,products.description,products.price,categories.name as cname,image,categories.id  from products
 inner join categories on products.category_id = categories.id;";
-
 /*On sélectionne la table products, on va chercher l'id on lui attribu un nom, en l'occurence ici "pid"*/
 
 
-$req = $db->prepare($sql);  /*Prépare une requête SQL à être exécuter par la méthode PDO vu plus au dessus*/
+$req = $db->prepare($sql);
 $req->execute();
 
 
-/*while ($data=$req->fetchObject()){
-    var_dump($data);
-}*/
 ?>
 
 <!doctype html>
@@ -46,6 +26,7 @@ $req->execute();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/profil.css">
 </head>
 <body>
 
@@ -64,15 +45,34 @@ $req->execute();
             </li>
         </ul>
     </div>
+    <div align="center">
+        <?php
+        if (isset($_SESSION["role"])&&$_SESSION["pseudo"]) {
+            ?>
+            <h2 id="presentation">Bonjour <?php echo $_SESSION["pseudo"] ?></h2>
+            <a id="deco" href="deconnexion.php">C'est ici pour se déconnecter !</a>
+            <?php
+        }
+        ?>
+    </div>
 </nav>
 
 
 <div class="container">
     <div class="text-center mt-3">
         <h1>Tableau des articles</h1>
-        <a href="ajoutproduit.php">
-            <button type="button" class="btn btn-warning">Ajouter un produit</button>
-        </a>
+        <?php
+        if (isset($_SESSION["role"])&&$_SESSION["role"] ==1) {
+
+            ?>
+            <a href="ajoutproduit.php">
+                <button type="button" class="btn btn-warning">Ajouter un produit</button>
+            </a>
+
+            <?php
+        }
+
+        ?>
         <table class="table table-striped table-dark mt-3">
             <thead>
             <tr>
@@ -100,11 +100,24 @@ $req->execute();
                 <td><?php echo $data->cname ?></td>
                 <td><img src="libs/img/<?php echo $data->image ?>" id="img1" alt="img"></td>
                 <td>
+                    <?php
+                    if (isset($_SESSION["role"])&&$_SESSION["role"] ==1){
+
+
+                    ?>
+
                     <a href="update.php?id=<?php echo $data->pid ?>"
                     <button type="button" class="btn btn-primary mr-2">Modifier</button>
                     <a href="supprimeproduit.php?id=<?php echo $data->pid ?>"
+
+
                     <button type="button" class="btn btn-danger mr-1">Supprimer</button>
                     <a href="afficheproduit.php?id=<?php echo $data->pid ?>">
+
+                        <?php
+                        }
+                    ?>
+
                         <button type="button" class="btn btn-success">Découvrir</button>
                     </a>
                 </td>

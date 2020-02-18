@@ -1,33 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.2
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1:3308
--- Généré le :  ven. 07 fév. 2020 à 09:08
--- Version du serveur :  8.0.18
--- Version de PHP :  7.3.12
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données :  `products`
---
-
--- --------------------------------------------------------
-
---
--- Structure de la table `categories`
---
-
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -58,16 +28,18 @@ CREATE TABLE IF NOT EXISTS `membres` (
   `pseudo` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `mail` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   `motdepasse` text COLLATE utf8mb4_general_ci NOT NULL,
+  `role_id` int(11) NOT NULL DEFAULT '2',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `membres`
 --
 
-INSERT INTO `membres` (`id`, `pseudo`, `mail`, `motdepasse`) VALUES
-(1, 'administrateur', 'administrateur@gmail.com', '1234'),
-(2, 'visiteur', 'visiteur@gmail.com', '1234');
+INSERT INTO `membres` (`id`, `pseudo`, `mail`, `motdepasse`, `role_id`) VALUES
+(1, 'administrateur', 'administrateur@gmail.com', '1234', 1),
+(2, 'visiteur', 'visiteur@gmail.com', '1234', 2),
+(13, 'kevin', 'kevin.radosz@gmail.com', '1111', 2);
 
 -- --------------------------------------------------------
 
@@ -86,15 +58,16 @@ CREATE TABLE IF NOT EXISTS `products` (
   `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=104 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `products`
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `image`, `created`, `modified`) VALUES
-(11, 'aaaa', 'For testing purposes.', 100, 2, '3.jpeg', '2019-09-16 20:46:01', '2014-06-05 16:10:54'),
-(12, 'Abercrombie Lake Arnold Shirt', 'Perfect as gift!', 60, 1, '2.jpeg', '2014-06-06 17:12:21', '2014-06-05 16:12:11'),
+(97, 'Samsung Galaxy', 'sonysony', 222, 0, '8.jpeg', '2020-02-10 09:01:20', '2020-02-10 08:01:20'),
+(99, 'fregt', 'htyhy', 77755, 1, '8.jpeg', '2020-02-10 10:57:48', '2020-02-10 09:57:48'),
+(11, 'Samsung Galaxy', 'htyhy', 555, 0, '8.jpeg', '2019-09-16 20:46:01', '2014-06-05 16:10:54'),
 (13, 'Abercrombie Allen Brook Shirt', 'Cool red shirt!', 70, 1, '3.jpeg', '2014-06-06 17:12:59', '2014-06-05 16:12:49'),
 (25, 'Abercrombie Allen Anew Shirt', 'Awesome new shirt!', 99, 1, '4.jpeg', '2014-11-22 18:42:13', '2014-11-21 18:42:13'),
 (26, 'Another product', 'Awesome product!', 555, 2, '5.jpeg', '2019-09-16 20:46:01', '2014-11-21 19:07:34'),
@@ -107,8 +80,11 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `im
 (59, 'Google Nexus 4', 'The most awesome phone ', 29, 2, 'telechargement.jpeg', '2019-09-16 20:46:01', '2019-09-13 16:09:42'),
 (60, 'Samsung Galaxy S4', 'How about no? 123', 69, 2, 'telechargement.jpeg', '2019-09-16 20:46:01', '2019-09-13 16:22:27'),
 (61, 'Lenovo Laptop', 'My business partner.', 399, 2, 'telechargement.jpeg', '2019-09-16 20:46:01', '2014-05-31 00:13:39'),
+(100, 'Samsung Galaxy', 'gtg', 777, 3, '8.jpeg', '2020-02-10 11:05:05', '2020-02-10 10:05:05'),
 (96, 'aaaa', 'Good !', 77755, 2, '8.jpeg', '2020-02-07 09:36:33', '2020-02-07 08:36:33'),
-(87, 'Samsung Galaxy', 'htyhy', 777, 1, '5.jpeg', '2020-02-04 14:57:55', '2020-02-04 13:57:55');
+(87, 'Samsung Galaxy', 'htyhy', 777, 1, '5.jpeg', '2020-02-04 14:57:55', '2020-02-04 13:57:55'),
+(102, 'Samsung Galaxy', 'gtg', 555, 3, '8.jpeg', '2020-02-10 13:04:37', '2020-02-10 12:04:37'),
+(103, 'Samsung Galaxy', 'gtg', 555, 3, '4.jpeg', '2020-02-10 13:04:53', '2020-02-10 12:04:53');
 
 -- --------------------------------------------------------
 
@@ -153,7 +129,3 @@ INSERT INTO `user` (`id`, `pseudo`, `email`, `password`) VALUES
 (1, 'administrateur', 'administrateur@gmail.com', '1234'),
 (2, 'visiteur', 'visiteur@gmail.com', '1234');
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

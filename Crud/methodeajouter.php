@@ -40,11 +40,11 @@ if (isset($_POST["categ"])) {
 }
 
 
-if (isset($_POST["image"])) {
-    $image = htmlspecialchars(trim($_POST["image"]));
+if (isset($_POST["picture"])) {
+    $image = htmlspecialchars(trim($_POST["picture"]));
 }
 
-$ajouter = "INSERT INTO products(name, description, price, category_id, image) VALUES(:nom, :descript, :prix, :categ, :image)";
+$ajouter = "INSERT INTO products(name, description, price, category_id, image) VALUES(:nom, :descript, :prix, :categ, :picture)";
 
 
 $req = $db->prepare($ajouter);
@@ -52,7 +52,7 @@ $req->bindParam(':nom', $name);
 $req->bindParam(':descript', $description);
 $req->bindParam(':prix', $price);
 $req->bindParam(':categ', $idcategories);
-$req->bindParam(':image', $image);
+$req->bindParam(':picture', $image);
 $req->execute();
 
 header("location: index.php");

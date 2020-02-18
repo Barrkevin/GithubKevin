@@ -17,27 +17,31 @@ function connect()
     }
 }
 
-
 $db = connect();
 
 
+
 if (isset($_POST['forminscription'])) {         /*Reprend les éléments de la page inscription*/
-    $pseudo = htmlspecialchars($_POST['pseudo']);
+    $pseudo = htmlspecialchars($_POST['pseudo']);  /*Fonction qui permet d'enlever les caractères html etc
+  et permet d'éviter les injections */
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
     $mdp = htmlspecialchars($_POST['mdp']);
     $mdp2 = htmlspecialchars($_POST['mdp2']);
 
-    /*Si le pseudo, le mail et le mot de passe n'existe pas*/
-    if (!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
+    /*Si les variables ne sont pas vide*/
+    if (!empty($_POST['pseudo'])
+        AND !empty($_POST['mail'])
+        AND !empty($_POST['mail2'])
+        AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
 
         $pseudolength = strlen($pseudo);    /*Calcul la taille du pseudo*/
 
-        if ($pseudolength <= 255) {     /*Si le pseudo fait plus de 255carac*/
+        if ($pseudolength <= 255) {     /*Si le pseudo fait moins de 255 on continue si non erreur */
 
-            if ($mail == $mail2) {  /*Si les deux mails sont pareil */
+            if ($mail == $mail2) {  /*Si les deux mails sont pareil on continue si non erreur */
 
-                if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+                if (filter_var($mail, FILTER_VALIDATE_EMAIL)) { /* Si le mail est bon on continue si non erreur */
 
                     $reqmail = $db->prepare("SELECT * FROM membres WHERE mail = ?");
 
@@ -48,6 +52,8 @@ if (isset($_POST['forminscription'])) {         /*Reprend les éléments de la p
                     if ($mailexist == 0) {
 
                         if ($mdp == $mdp2) {
+                            /* Si les deux mails correspondent on continue
+                            on rentre un membre, on exécute sous forme de tableau*/
 
                             $insertmbr = $db->prepare("INSERT INTO membres(pseudo, mail, motdepasse) VALUES(?, ?, ?)");
 
@@ -74,12 +80,10 @@ if (isset($_POST['forminscription'])) {         /*Reprend les éléments de la p
         $erreur = "Tous les champs doivent être complétés !";
     }
 }
-
 header("location: connexion.php");
 
 
 /*https://www.youtube.com/watch?v=s7qtAnH5YkY*/
 
 /*https://www.youtube.com/watch?time_continue=231&v=OHjkg_rifTw&feature=emb_title*/
-
 

@@ -19,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X1TzXSZ2NDGr8MrDKGjgvaokoD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,9 +32,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Projets/SiteImmo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -72,6 +82,15 @@
       <workItem from="1580799941522" duration="25596000" />
       <workItem from="1580886755916" duration="7358000" />
       <workItem from="1580972900912" duration="1614000" />
+      <workItem from="1580976040307" duration="5075000" />
+      <workItem from="1581001031006" duration="239000" />
+      <workItem from="1581001279106" duration="627000" />
+      <workItem from="1581059005738" duration="9053000" />
+      <workItem from="1581265725448" duration="7709000" />
+      <workItem from="1581319611532" duration="18270000" />
+      <workItem from="1581347578867" duration="88000" />
+      <workItem from="1581425753649" duration="376000" />
+      <workItem from="1581665293348" duration="4249000" />
     </task>
     <servers />
   </component>
@@ -79,17 +98,23 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580738637564">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581668077752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580738637564" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1580817503750">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581668077752" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1581665498073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580817503750" />
-    <state x="461" y="137" key="SettingsEditor" timestamp="1580742258660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="596" y="383" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1581272390252" />
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581665498073" />
+    <state x="346" y="119" key="SettingsEditor" timestamp="1581273473983">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="346" y="119" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1581273473983" />
     <state x="461" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580742258660" />
+    <state x="413" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1581265731671">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="413" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.804@0.23.1440.804" timestamp="1581265731671" />
   </component>
 </project>
