@@ -108,10 +108,13 @@ $req->execute();
 
                     <a href="update.php?id=<?php echo $data->pid ?>"
                     <button type="button" class="btn btn-primary mr-2">Modifier</button>
+
+
+
                     <a href="supprimeproduit.php?id=<?php echo $data->pid ?>"
-
-
                     <button type="button" class="btn btn-danger mr-1">Supprimer</button>
+
+
                     <a href="afficheproduit.php?id=<?php echo $data->pid ?>">
 
                         <?php

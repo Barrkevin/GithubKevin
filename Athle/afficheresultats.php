@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "config.php";
 
 /*var_dump($_GET);*/
@@ -49,10 +50,14 @@ require "header.php"
         </div>
         <div class="row">
             <div id="textphoto" class="col-12 mt-3 h5">
-                <p>Id du résultat : <?php echo $data->rid ?></p>
-                <p>Catégorie du résultat : <?php echo $data->cname ?></p>
-                <p>Nom du résultat : <?php echo $data->rname ?></p>
-                <p>Description du résultat : <?php echo $data->description ?></p>
+                <p>Id du résultat :
+                    <br><?php echo $data->rid ?></p>
+                <p>Catégorie du résultat :
+                    <br><?php echo $data->cname ?></p>
+                <p>Nom du résultat :
+                    <br><?php echo $data->rname ?></p>
+                <p>Description du résultat :
+                    <br><br><?php echo $data->description ?></p>
             </div>
         </div>
 

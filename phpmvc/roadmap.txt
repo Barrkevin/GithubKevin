@@ -1,0 +1,25 @@
+MVC
+
+1. Créer la structure du site :
+    -index.php
+    -application
+        -config
+        -controller
+        -model
+        -view
+    -public
+        etc ...
+
+    2. Créer le controleur principal (frontal, routeur)
+        application/controller/Controller.php
+
+    3. Créer les fonction init() et display() de Controller et les appeler dans index.php
+
+    4. fonction init() de Controller :
+        -session start
+        -autoload des classes
+        -réccupération de $_GET pour choisir model et view en fonction de la routeur
+    
+    5. créer la classe Config avec les variables nécessaires à la connection DB
+
+    6. créer la classe Model qui va gérer les interactions avec DB

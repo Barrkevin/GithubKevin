@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "header.php";
 
 
@@ -38,17 +39,17 @@ if(isset($_POST['mailform']))
 
 ?>
 
-<script src="css/contact.css"></script>
+<link rel="stylesheet" href="css/contact.css">
 
 <div class="container mt-5" id="containercontact">
     <form id="container128" class="offset-sm-2 col-8 bg-white border border-secondary" method="POST">
         <div class="p-5">
-            <h2 class="text-center"><p>Nous contacter :</p></h2>
+            <h2 class="text-center"><p>Nous contacter</p></h2>
             <hr id="hr16" class="mb-4">
 
             <div class="form-group row">
-                <label for="nom" class="col-4 col-form-label">Nom:</label>
-                <div class="col-8">
+                <label for="nom" class="col-5 col-form-label">Nom</label>
+                <div class="col-7">
                     <input id="nomutilisateur" type="text" name="nom" class="form-control" placeholder="Votre Nom"
                            value="<?php if (isset($_POST['nom'])) {
                                echo $_POST['nom'];
@@ -59,8 +60,8 @@ if(isset($_POST['mailform']))
 
 
             <div class="form-group row">
-                <label for="mail" class="col-4 col-form-label">Email:</label>
-                <div class="col-8">
+                <label for="mail" class="col-5 col-form-label">Email</label>
+                <div class="col-7">
                     <input id="mailutilisateur" type="text" name="mail" class="form-control"
                            placeholder="Votre Email" value="<?php if (isset($_POST['mail'])) {
                         echo $_POST['mail'];
@@ -70,8 +71,8 @@ if(isset($_POST['mailform']))
 
 
             <div class="form-group row">
-                <div class="col-4 col-form-label">Votre message:</div>
-                <div class="col-8">
+                <div class="col-5 col-form-label">Message</div>
+                <div class="col-7">
                     <textarea id="messageutilisateur" name="message" class="w-100"
                               required><?php if (isset($_POST['message'])) {
                             echo $_POST['message'];
@@ -80,6 +81,10 @@ if(isset($_POST['mailform']))
             </div>
 
             <input type="submit" class="btn btn-warning w-100" name="mailform" Value=Envoyer !">
+            <a href="index.php">
+                <button type="button" class="btn btn-primary w-100 mt-2 mb-5">
+                    Retour
+                </button></a>
         </div>
     </form>
 

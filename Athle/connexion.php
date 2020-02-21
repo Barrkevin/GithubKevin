@@ -30,20 +30,7 @@ if(isset($_POST['formconnexion'])) {
 require "header.php"
 ?>
 
-
-<!doctype html>
-<html lang="fr">
-<head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/inscription.css">
-</head>
+    <link rel="stylesheet" href="css/connexion.css">
 <body>
 <div class="container mt-5">
     <form id="container128" class="offset-sm-2 col-8 bg-white border border-secondary" method="POST"
@@ -54,16 +41,16 @@ require "header.php"
             <hr id="hr16" class="mb-4">
 
             <div class="form-group row">
-                <label for="mail" class="col-4 col-form-label">Email :</label>
-                <div class="col-8">
-                    <input type="email" name="mailconnect" class="form-control" placeholder="Mail">
+                <label for="mail" id="email12" class="col-5 col-form-label">Email</label>
+                <div class="col-7">
+                    <input type="email" id="mail01" name="mailconnect" class="form-control" placeholder="Mail">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="mdp" class="col-4 col-form-label">Mot de passe</label>
-                <div class="col-8">
-                    <input type="password" class="form-control" name="mdpconnect" placeholder="Mot de passe">
+                <label for="mdp" class="col-5 col-form-label">Mot de passe</label>
+                <div class="col-7">
+                    <input type="password" id="mdp01" class="form-control" name="mdpconnect" placeholder="Mot de passe">
                 </div>
             </div>
 
@@ -73,7 +60,7 @@ require "header.php"
             <a href="index.php">
                 <button type="button" class="btn btn-primary w-100 mt-2 mb-5">
                     Retour
-                </button>
+                </button></a>
         </div>
     </form>
     <?php

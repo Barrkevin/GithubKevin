@@ -106,6 +106,7 @@ $data = $req->fetch();
             </a>
         </div>
     </form>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

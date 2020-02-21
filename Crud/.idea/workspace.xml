@@ -32,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Projets/SiteImmo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -91,6 +91,12 @@
       <workItem from="1581347578867" duration="88000" />
       <workItem from="1581425753649" duration="376000" />
       <workItem from="1581665293348" duration="4249000" />
+      <workItem from="1581923819364" duration="3553000" />
+      <workItem from="1581939636173" duration="3521000" />
+      <workItem from="1581947746136" duration="5271000" />
+      <workItem from="1582009675364" duration="25000" />
+      <workItem from="1582009710312" duration="13000" />
+      <workItem from="1582028787251" duration="1806000" />
     </task>
     <servers />
   </component>
@@ -98,10 +104,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581668077752">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1582009721665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581668077752" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582009721665" />
     <state x="795" y="443" key="NewPhpFileDialog" timestamp="1581665498073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -116,5 +122,9 @@
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="413" y="256" key="com.intellij.ide.util.TipDialog/0.23.1440.804@0.23.1440.804" timestamp="1581265731671" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1581940027543">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581940027543" />
   </component>
 </project>
