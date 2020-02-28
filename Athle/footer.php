@@ -2,15 +2,6 @@
 
 ?>
 
-<footer>
-    <div class="container-fluid mt-5 bg-dark" id="hcontainer">
-        <nav class="nav nav-pills nav-justified">
-            <a class="nav-item nav-link" id="navfacebook" href="https://fr-fr.facebook.com/login/"><h4>Facebook</h4></a>
-            <a class="nav-item nav-link" id="navcontact" href="contact.php"><h4>Contact</h4></a>
-        </nav>
-    </div>
-</footer>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

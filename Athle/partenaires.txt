@@ -1,0 +1,16 @@
+<a href="https://www.sodebo.com/" target="_blank"><img src="libs/img/sodebo.jpg"</a>
+        <a href="https://www.eiffage.com/" target="_blank"><img src="libs/img/eiffage.jpg"</a>
+        <a href="http://www.airspire.fr/" target="_blank"><img src="libs/img/airspire.jpg"</a>
+        <a href="https://www.nostalgie.fr/" target="_blank"><img src="libs/img/nostalgie.jpg"</a>
+        <a href="http://www.lahaltefarbusienne.fr/" target="_blank"><img src="libs/img/haltefarbu.jpg"</a>
+        <a href="https://www.cinemaspathegaumont.com/cinemas/cinema-pathe-lievin" target="_blank"><img src="libs/img/path�.jpg"</a>
+        <a href="https://www.ville-avion.fr/" target="_blank"><img src="libs/img/avionville.jpg"</a>
+        <a href="https://www.points.fr/centre-points/auto-pneu-dislaire,avion,00000025.html" target="_blank"><img src="libs/img/points.jpg"</a>
+        <a href="https://fr.mappy.com/poi/53c93f43e4b05c124b468a1a#/1/M2/TGeoentity/F53c93f43e4b05c124b468a1a/N151.12061,6.11309,2.74967,50.43612/Z15/" target="_blank"><img src="libs/img/joly.jpg"</a>
+        <a href="https://fr-fr.facebook.com/delisnack86/" target="_blank"><img src="libs/img/delitsnack.jpg"</a>
+        <a href="https://www.carrefour.fr/magasin/market-avion" target="_blank"><img src="libs/img/carrefourmarker.jpg"</a>
+        <a href="https://fr.mappy.com/poi/5b37dd060351d15ffb744d54#/3/M2/TGeoentity/F5b37dd060351d15ffb744d54/N151.12061,6.11309,2.8448,50.41613/Z15/" target="_blank"><img src="libs/img/boucher.jpg"</a>
+        <a href="https://www.credit-agricole.fr/particulier/agence/nord-de-france/avion-3239.html" target="_blank"><img src="libs/img/creditagricole.jpg"</a>
+        <a href="https://carrefourdelafleur.com/" target="_blank"><img src="libs/img/carrefourfleur.jpg"</a>
+        <img src="libs/img/avionpartenaire.jpg"</a>
+        <a href="http://www.saint-amand.com/" target="_blank"><img src="libs/img/saintamand.jpg"</a>

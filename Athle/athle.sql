@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
--- Généré le :  mar. 18 fév. 2020 à 07:21
+-- Généré le :  ven. 28 fév. 2020 à 10:42
 -- Version du serveur :  8.0.18
--- Version de PHP :  7.3.12
+-- Version de PHP :  7.4.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,8 +42,33 @@ CREATE TABLE IF NOT EXISTS `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `created`, `modified`) VALUES
-(1, 'Hors stade', '2020-02-17 14:00:00', '2020-02-17 15:00:00'),
-(2, 'stade', '2020-02-17 11:00:00', '2020-02-17 14:00:00');
+(1, 'Hors-stade', '2020-02-17 14:00:00', '2020-02-17 15:00:00'),
+(2, 'Stade', '2020-02-17 11:00:00', '2020-02-17 14:00:00'),
+(3, 'Cross', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `competition`
+--
+
+DROP TABLE IF EXISTS `competition`;
+CREATE TABLE IF NOT EXISTS `competition` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `description` text COLLATE utf8mb4_general_ci NOT NULL,
+  `category_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `competition`
+--
+
+INSERT INTO `competition` (`id`, `name`, `description`, `category_id`) VALUES
+(8, 'Le 15/06/2006', 'Bonne compete', 2),
+(7, 'le 10/11/1993', 'peut-être', 1),
+(6, 'Le 08/11/1992', 'dezf(\'y', 3);
 
 -- --------------------------------------------------------
 
@@ -66,8 +91,8 @@ CREATE TABLE IF NOT EXISTS `membres` (
 --
 
 INSERT INTO `membres` (`id`, `pseudo`, `mail`, `motdepasse`, `role_id`) VALUES
-(1, 'administrateur', 'administrateur@gmail.com', '1234', 1),
-(2, 'visiteur', 'visiteur@gmail.com', '1234', 2);
+(1, 'administrateur', 'administrateur@gmail.com', '1111', 1),
+(2, 'visiteur', 'visiteur@gmail.com', '1111', 2);
 
 -- --------------------------------------------------------
 
@@ -78,23 +103,23 @@ INSERT INTO `membres` (`id`, `pseudo`, `mail`, `motdepasse`, `role_id`) VALUES
 DROP TABLE IF EXISTS `resultats`;
 CREATE TABLE IF NOT EXISTS `resultats` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) NOT NULL,
-  `description` text NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `category_id` int(11) NOT NULL,
-  `image` varchar(250) NOT NULL,
+  `image` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=136 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `resultats`
 --
 
 INSERT INTO `resultats` (`id`, `name`, `description`, `category_id`, `image`, `created`, `modified`) VALUES
-(105, 'kekekeke', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l\'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n\'a pas fait que survivre cinq siècles, mais s\'est aussi adapté à la bureautique informatique, sans que son contenu n\'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 2, 'start.jpg', '2020-02-17 15:14:45', '2020-02-17 14:14:45'),
-(113, 'kekekeke', '1', 2, 'attention.png', '2020-02-17 16:04:30', '2020-02-17 15:04:30'),
-(114, 'kekekeke', 'iiiiiiii', 1, 'start.jpg', '2020-02-17 16:04:36', '2020-02-17 15:04:36');
+(120, 'ccccccc', 'vvvvvvv', 1, 'meeting.jpg', '2020-02-24 11:39:53', '2020-02-24 10:39:53'),
+(118, 'wwwwwwwwwwwwwwwwwwwwww', 'xxxxxxxxxxxxxxxxxxx', 1, 'athletic.jpg', '2020-02-24 10:45:29', '2020-02-24 09:45:29'),
+(133, 'oui', 'non', 3, '', '2020-02-28 09:38:58', '2020-02-28 08:38:58');
 
 -- --------------------------------------------------------
 
