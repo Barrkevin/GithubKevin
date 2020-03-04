@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SiteImmo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -88,6 +88,18 @@
       <workItem from="1581924115510" duration="1954000" />
       <workItem from="1582018022689" duration="215000" />
       <workItem from="1582018275794" duration="486000" />
+      <workItem from="1583133553283" duration="664000" />
+      <workItem from="1583134234702" duration="22919000" />
+      <workItem from="1583162240685" duration="481000" />
+      <workItem from="1583219427919" duration="17757000" />
+      <workItem from="1583237946234" duration="7000" />
+      <workItem from="1583239722542" duration="256000" />
+      <workItem from="1583244072700" duration="1448000" />
+      <workItem from="1583248110632" duration="119000" />
+      <workItem from="1583248279563" duration="35000" />
+      <workItem from="1583248354417" duration="130000" />
+      <workItem from="1583305678095" duration="4846000" />
+      <workItem from="1583310737658" duration="19149000" />
     </task>
     <servers />
   </component>
@@ -95,14 +107,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581923336541">
+    <state x="590" y="0" key="#PHP" timestamp="1583137299950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581923336541" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1578297815718">
+    <state x="590" y="0" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1583137299950" />
+    <state x="627" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583222080427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578297815718" />
+    <state x="627" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583222080427" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583308277597">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583308277597" />
+    <state x="748" y="283" key="NewPhpClassDialog" timestamp="1583318679155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="283" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583318679155" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1583319512860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583319512860" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1578557275700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

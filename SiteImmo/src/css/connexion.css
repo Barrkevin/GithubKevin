@@ -2,18 +2,6 @@
     #container128{
         min-width: 300px;
     }
-    #nomutilisateur, #mailutilisateur, #messageutilisateur{
-        min-width: 160px;
-    }
-    .col-form-label {
-        margin-left: -45px;
-    }
-}
-
-@media screen and (max-width: 575px){
-    #container128{
-        min-width: 300px;
-    }
     #mail01, #mdp01{
         min-width: 150px;
     }
@@ -22,13 +10,15 @@
     }
     .col-form-label {
         margin-left: -45px;
-        margin-right: 30px;
     }
 }
 
 @media screen and (min-width: 375px) and (max-width: 400px) {
     .mt-5 {
         margin-top: 0rem !important;
+    }
+    #mail01, #mdp01 {
+        min-width: 188px;
     }
 }
 
@@ -39,29 +29,21 @@
     #container128 {
         min-width: 342px;
     }
-    #nomutilisateur, #mailutilisateur, #messageutilisateur{
-        min-width: 180px;
-    }
 }
-
 @media screen and (min-width: 451px) and (max-width: 500px) {
     .mt-5 {
         margin-top: 0rem!important;
     }
+
     #container128 {
         min-width: 386px;
     }
-    #nomutilisateur, #mailutilisateur, #messageutilisateur{
-        min-width: 200px;
-    }
 }
+
 
 @media screen and (min-width: 501px) and (max-width: 575px) {
     #container128 {
         min-width: 480px;
-    }
-    #nomutilisateur, #mailutilisateur, #messageutilisateur{
-        min-width: 260px;
     }
 }
 

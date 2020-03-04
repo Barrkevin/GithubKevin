@@ -1,0 +1,17 @@
+#navbiens, #navconnexion, #navcontact, #nav1, #nav2, #presentation {
+    color: white;
+}
+
+#maps1, #maps2, #maps3, #maps4, #maps5, #maps6{
+    width: 100%;
+    height: 300px;
+}
+
+#maps{
+    width: 100%;
+    height: 400px;
+}
+
+#enveloppe{
+    color: white;
+}
