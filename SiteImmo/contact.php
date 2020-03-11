@@ -1,27 +1,24 @@
 <?php
 session_start();
-require "header.php";
+require "Header.php";
 
 
+if (isset($_POST['mailform'])) {
+    if (!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message'])) {
+        $header = "MIME-Version: 1.0\r\n";
+        $header .= 'From:"kevin.radosz@gmail.com"<kevin.radosz@gmail.com>' . "\n";
+        $header .= 'Content-Type:text/html; charset="uft-8"' . "\n";
+        $header .= 'Content-Transfer-Encoding: 8bit';
 
-if(isset($_POST['mailform']))
-{
-    if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message']))
-    {
-        $header="MIME-Version: 1.0\r\n";
-        $header.='From:"kevin.radosz@gmail.com"<kevin.radosz@gmail.com>'."\n";
-        $header.='Content-Type:text/html; charset="uft-8"'."\n";
-        $header.='Content-Transfer-Encoding: 8bit';
-
-        $message='
+        $message = '
 		<html>
 			<body>
 				<div align="center">
 					<br />
-					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
-					<u>Mail de l\'expéditeur :</u>'.$_POST['mail'].'<br />
+					<u>Nom de l\'expéditeur :</u>' . $_POST['nom'] . '<br />
+					<u>Mail de l\'expéditeur :</u>' . $_POST['mail'] . '<br />
 					<br />
-					'.nl2br($_POST['message']).'
+					' . nl2br($_POST['message']) . '
 					<br />
 				</div>
 			</body>
@@ -29,18 +26,17 @@ if(isset($_POST['mailform']))
 		';
 
         mail("kevin.radosz@gmail.com", "CONTACT - Contact du site immobilette", $message, $header);
-        $msg="Votre message a bien été envoyé !";
-    }
-    else
-    {
-        $msg="Tous les champs doivent être complétés !";
+        $msg = "Votre message a bien été envoyé !";
+    } else {
+        $msg = "Tous les champs doivent être complétés !";
     }
 }
 
 ?>
 
-<link rel="stylesheet" href="src/css/contact.css">
+<link rel="stylesheet" href="src/css/Contact.css">
 
+<body>
 <div class="container mt-5" id="containercontact">
     <form id="container128" class="offset-sm-2 col-8 bg-white border border-secondary" method="POST">
         <div class="p-5">
@@ -56,7 +52,6 @@ if(isset($_POST['mailform']))
                            } ?>"/>
                 </div>
             </div>
-
 
 
             <div class="form-group row">
@@ -81,21 +76,24 @@ if(isset($_POST['mailform']))
             </div>
 
             <input type="submit" class="btn btn-warning w-100" name="mailform" Value=Envoyer !">
-            <a href="index.php">
+            <a href="Index.php">
                 <button type="button" class="btn btn-primary w-100 mt-2">
                     Retour
-                </button></a>
+                </button>
+            </a>
         </div>
     </form>
 
+
     <?php
-    if(isset($msg))
-    {
+    if (isset($msg)) {
         echo $msg;
     }
     ?>
 </div>
 
+</body>
+
 <?php
-require "footer.php"
+require "Footer.php"
 ?>
