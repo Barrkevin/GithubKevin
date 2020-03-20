@@ -1,3 +1,12 @@
 #img1 {height: 50px;
     width: 50px
 }
+
+.container{
+    min-height: 747px;
+}
+
+body{
+    background-image: url(../libs/img/race.jpg);
+    background-repeat: no-repeat;
+}

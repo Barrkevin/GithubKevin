@@ -35,41 +35,37 @@ $req->execute();
 
 require "header.php"
 ?>
+    <link rel="stylesheet" href="css/afficheresultats.css">
 
-<div class="container mt-2">
-    <div class="text-center mt-3 offset-sm-2 col-8 bg-white border border-secondary">
-        <h1>Résultat</h1>
-        <hr id="hr16" class="mb-4">
-        <div class="container">
+    <div class="container mt-4">
             <?php
             while ($data = $req->fetchObject()) {      /* Tant que data = req... fetchObject renvoi directement le tableau*/
             /*echo "<img src=libs/img/" . $data->image . "/>";*/
             ?>
-            <img src="libs/img/<?php echo $data->image ?>" class="d-block w-100" id="imgaffiche" alt="img54">
 
-        </div>
-        <div class="row">
-            <div id="textphoto" class="col-12 mt-3 h5">
-                <p>Id du résultat :
-                    <br><?php echo $data->rid ?></p>
-                <p>Catégorie du résultat :
-                    <br><?php echo $data->cname ?></p>
-                <p>Nom du résultat :
-                    <br><?php echo $data->rname ?></p>
-                <p>Description du résultat :
-                    <br><br><?php echo $data->description ?></p>
+
+
+            <div class="card text-center">
+                <div class="card-header">
+                    <h5 class="card-title mb-5 mt-2">
+                        <?php echo $data->rname ?></h5>
+                <img src="libs/img/<?php echo $data->image ?>"
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text"><?php echo $data->description ?></p>
+                        <div class="card-footer text-muted">
+                    <a href="resultats.php" class="btn btn-primary">Retour aux résultats</a>
+                        </div>
+                </div>
             </div>
         </div>
+    </div>
 
         <?php
         }
         ?>
-        <a href="resultats.php">
-            <button type="button" class="btn btn-primary w-100 mt-2 mb-5">
-                Retour
-            </button>
-    </div>
-</div>
+
 
 <?php
 require "footer.php"

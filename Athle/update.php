@@ -17,11 +17,29 @@ inner join categories on resultats.category_id = categories.id where resultats.i
 $req = $db->prepare($sql);  /*Prépare une requête SQL à être exécuter par la méthode PDO vu plus au dessus*/
 $req->bindParam(":ids", $id);
 $req->execute();
+$data = $req->fetch();
+
+
+$sql = "SELECT * FROM categories";
+$req = $db->prepare($sql);
+$req->execute();
+$categories = [];
+while ($datacateg = $req->fetchObject()){
+    $categories[]=$datacateg;
+}
+
+$sql = "SELECT * FROM resultats WHERE id=:ids;";
+$req = $db->prepare($sql);
+$req->bindParam(":ids", $id);
+$req->execute();
+
+$resultats = $req->fetchObject();
 
 
 require "header.php";
 
-$data = $req->fetch();
+
+
 //var_dump($data);
 ?>
 
@@ -32,11 +50,13 @@ $data = $req->fetch();
                 <h2 class="text-center"><p>Modification des résultats</p></h2>
                 <hr id="hr16" class="mb-4">
 
+
                 <div class="form-group row">
                     <div class="col-8">
                         <input id="nom122" type="text" name="id" class="form-control d-none" value="<?php echo $id; ?>">
                     </div>
                 </div>
+
 
                 <div class="form-group row">
                     <label class="col-4 col-form-label">Nom:</label>
@@ -45,30 +65,51 @@ $data = $req->fetch();
                     </div>
                 </div>
 
+
                 <div class="form-group row">
                     <label class="col-4 col-form-label">Description</label>
                     <div class="col-8">
                         <textarea id="description18" type="text" name="descript" class="form-control">
-                            <?php echo $data["description"] ?>"
+                            <?php echo $data["description"] ?>
                         </textarea>
                     </div>
                 </div>
 
 
                 <div class="form-group row">
-                    <label for="adresse05" class="col-4 col-form-label">Catégorie:</label>
+                    <label for="categ001" class="col-4 col-form-label">Catégorie:</label>
                     <div class="col-8">
-                        <input id="categ18" type="text" name="categ" class="form-control"
-                               placeholder="1 -> Hors stade. 2 -> Stade.">
+                    <select type="text" class="form-control" name="categ" value=<?= $resultats->category_id; ?>>
+                        <?php
+                        foreach ($categories as $categ) {
+                            ?>
+                            <option value="<?= $categ->id ?>"><?= $categ->name ?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
                     </div>
                 </div>
+
+
+
+                <!--<div class="form-group row">
+                    <label for="categ001" class="col-4 col-form-label">Catégorie:</label>
+                    <div class="col-8">
+                        <input id="categ18" type="text" name="categ" class="form-control" value="<?php /*echo $data["cname"] */?>">
+                    </div>
+                </div>-->
+
 
                 <div class="form-group row">
                     <label for="picture" class="col-4 col-form-label">Image:</label>
                     <div class="col-8">
-                        <input name="picture" type="file">
+                        <input type="hidden" value="100000000"> <!--limite le fichier a un certain nombre de KO-->
+                        <input type="file" name="picture">
+                        <input type="submit" name="envoyer" value="Envoyer le fichier">
                     </div>
                 </div>
+
 
 
                 <button type="submit" class="btn btn-warning w-100">

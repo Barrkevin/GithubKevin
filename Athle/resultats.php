@@ -26,7 +26,7 @@ require "header.php";
 
             ?>
             <a href="ajoutresultats.php">
-                <button type="button" class="btn btn-warning">Ajouter des résultats</button>
+                <button type="button" class="btn btn-warning">Ajouter un résultat</button>
             </a>
 
             <?php

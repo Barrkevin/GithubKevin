@@ -24,36 +24,94 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="meeting.php" id="navmeeting"><h5>Meeting</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resultats.php" id="navclub"><h5>Résultats</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="competitions.php" id="navcompet"><h5>Compétitions</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="galerie.php" id="navgalerie"><h5>Galerie</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="liens.php" id="navliens"><h5>Liens</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="inscription.php" id="navinscription"><h5>Inscription</h5></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="connexion.php" id="navconnexion"><h5>Connexion</h5></a>
-            </li>
+
+        <div class="btn-group mt-2">
+            <button type="button" class="btn btn-warning">Le club</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" id="">Organigrame du club</a>
+                <a class="dropdown-item" href="#" id="">Formulaire d'inscription et réglement</a>
+                <a class="dropdown-item" href="#" id="">Horaires des entrainement</a>
+                <a class="dropdown-item" href="#" id="">Administratif</a>
+            </div>
+        </div>
+
+        <div class="btn-group ml-2 mt-2">
+            <button type="button" class="btn btn-warning">Meeting Javary</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="" id="">Le Meeting</a>
+                <a class="dropdown-item" href="#" id="">Le programme</a>
+            </div>
+        </div>
+
+
+
+        <div class="btn-group mt-2">
+            <button type="button" class="btn btn-warning ml-2">Athlé Forme et santé</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="" id="">Athlé santé loisir</a>
+                <a class="dropdown-item" href="#" id="">Marche nordique</a>
+                <a class="dropdown-item" href="#" id="">Préparation physique</a>
+                <a class="dropdown-item" href="#" id="">Test VMA</a>
+            </div>
+        </div>
+
+
+        <div class="btn-group mt-2">
+            <button type="button" class="btn btn-warning ml-2">Documentations</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="" id="">Formation du jeune athlète</a>
+                <a class="dropdown-item" href="#" id="">Règles des compétitions</a>
+                <a class="dropdown-item" href="#" id="">Officiel</a>
+                <a class="dropdown-item" href="#" id="">Lutte anti dopage</a>
+            </div>
+        </div>
+
+
+<!--        <a href=""><button class="btn btn-warning ml-2" id="">Cross de la glissoire</button></a>-->
+        <a href="resultats.php"><button class="btn btn-warning ml-2 mt-2" id="">Résultats</button></a>
+        <a href="contact.php"><button class="btn btn-warning ml-2 mt-2" id="">Contact</button></a>
+
+
+            <!--Si l'utilisateur est connecté (session ouverte)-->
+            <?php
+            if (isset($_SESSION["role"])){
+            ?>
+
+
+                <a href="deconnexion.php"><button class="btn btn-warning ml-2 mt-2" id="">Deconnexion</button></a>
+
+                <!--Si non (==null) montrer connexion-->
+                <?php
+            }
+
+            else if (isset($_SESSION["role"]) ==null){
+                ?>
+                <a href="inscription.php"><button class="btn btn-warning ml-2 mt-2" id="">Inscription</button></a>
+                <a href="Connexion.php"><button class="btn btn-warning ml-2 mt-2" id="">Connexion</button></a>
+
+            <?php
+            }
+            ?>
         </ul>
+
     </div>
     <div align="center">
         <?php
         if (isset($_SESSION["role"])&&$_SESSION["pseudo"]) {
             ?>
-            <h2 id="presentation">Bonjour <?php echo $_SESSION["pseudo"] ?></h2>
-            <a id="deco" href="deconnexion.php">C'est ici pour se déconnecter !</a>
+            <h4 id="presentation">Bonjour <?php echo $_SESSION["pseudo"] ?></h4>
             <?php
         }
         ?>

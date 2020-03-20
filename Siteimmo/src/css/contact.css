@@ -1,21 +1,24 @@
-#navbiens, #navconnexion, #navcontact, #nav1, #nav2 {
-    color: white;
-}
-
-#hr16 {
-    height: 2px;
-    color: darkslategrey;
-    background-color: darkslategray;
-    width: 100%;
-    border: none;"
+@media screen and (max-width: 575px){
+    #container128{
+        min-width: 300px;
+    }
+    #nomutilisateur, #mailutilisateur, #messageutilisateur{
+        min-width: 160px;
+    }
+    .col-form-label {
+        margin-left: -45px;
+    }
 }
 
 @media screen and (max-width: 575px){
     #container128{
-        margin-left: 55px;
+        min-width: 300px;
     }
-    #prenom18, #nom122, #naissance02, #adresse05{
-        width: 130px;
+    #mail01, #mdp01{
+        min-width: 150px;
+    }
+    #email12{
+        min-width: 30px;
     }
     .col-form-label {
         margin-left: -45px;
@@ -23,6 +26,47 @@
     }
 }
 
-.container{
-    min-height: 715px;
+@media screen and (min-width: 375px) and (max-width: 400px) {
+    .mt-5 {
+        margin-top: 0rem !important;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) {
+    .mt-5 {
+        margin-top: 0rem!important;
+    }
+    #container128 {
+        min-width: 342px;
+    }
+    #nomutilisateur, #mailutilisateur, #messageutilisateur{
+        min-width: 180px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 500px) {
+    .mt-5 {
+        margin-top: 0rem!important;
+    }
+    #container128 {
+        min-width: 386px;
+    }
+    #nomutilisateur, #mailutilisateur, #messageutilisateur{
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 575px) {
+    #container128 {
+        min-width: 480px;
+    }
+    #nomutilisateur, #mailutilisateur, #messageutilisateur{
+        min-width: 260px;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+    #container128 {
+        min-width: 386px;
+    }
 }

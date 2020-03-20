@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb435b21-217a-4bcc-a38c-042246c50ea3" name="Default Changelist" comment="" />
+    <list default="true" id="bb435b21-217a-4bcc-a38c-042246c50ea3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Athle/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/afficheresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/afficheresultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/ajoutresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/ajoutresultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/athle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/athle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/connexion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/headerfooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/headerfooter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/indexmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/indexmap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/inscription.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/inscription.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/css/resultats.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/resultats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/libs/img/femme.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/libs/img/run.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/resultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/resultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Athle/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/._bddproducts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/._mabase.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Schéma 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/bien6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/biens.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/locations.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/appartement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/maison1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/maison2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/maison3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/maison4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/maison5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien1solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien2solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien3solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien4solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien5solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapbien6solo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/mapjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bien6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/biens.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +118,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="settings.php.debug.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -88,6 +163,40 @@
       <workItem from="1581924115510" duration="1954000" />
       <workItem from="1582018022689" duration="215000" />
       <workItem from="1582018275794" duration="486000" />
+      <workItem from="1583133553283" duration="664000" />
+      <workItem from="1583134234702" duration="22919000" />
+      <workItem from="1583162240685" duration="481000" />
+      <workItem from="1583219427919" duration="17757000" />
+      <workItem from="1583237946234" duration="7000" />
+      <workItem from="1583239722542" duration="256000" />
+      <workItem from="1583244072700" duration="1448000" />
+      <workItem from="1583248110632" duration="119000" />
+      <workItem from="1583248279563" duration="35000" />
+      <workItem from="1583248354417" duration="130000" />
+      <workItem from="1583305678095" duration="4846000" />
+      <workItem from="1583310737658" duration="19149000" />
+      <workItem from="1583334555923" duration="73000" />
+      <workItem from="1583392803702" duration="3111000" />
+      <workItem from="1583408886059" duration="1235000" />
+      <workItem from="1583478233918" duration="11200000" />
+      <workItem from="1583737817424" duration="23131000" />
+      <workItem from="1583824495229" duration="204000" />
+      <workItem from="1583825047047" duration="20000" />
+      <workItem from="1583827926031" duration="10815000" />
+      <workItem from="1583916596922" duration="11591000" />
+      <workItem from="1583996981232" duration="5812000" />
+      <workItem from="1584083243904" duration="634000" />
+      <workItem from="1584606540831" duration="1545000" />
+      <workItem from="1584608308679" duration="913000" />
+      <workItem from="1584610808369" duration="1428000" />
+      <workItem from="1584612670045" duration="765000" />
+      <workItem from="1584616835526" duration="1635000" />
+      <workItem from="1584618653588" duration="858000" />
+      <workItem from="1584619924594" duration="1774000" />
+      <workItem from="1584621745785" duration="1112000" />
+      <workItem from="1584689425620" duration="124000" />
+      <workItem from="1584690037215" duration="1715000" />
+      <workItem from="1584692038747" duration="52000" />
     </task>
     <servers />
   </component>
@@ -95,21 +204,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581923336541">
+    <state x="590" y="0" key="#PHP" timestamp="1583137299950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581923336541" />
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1578297815718">
+    <state x="590" y="0" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1583137299950" />
+    <state x="627" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583222080427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578297815718" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1578557275700">
+    <state x="627" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583222080427" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583825065965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578557275700" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578320949075">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583825065965" />
+    <state x="748" y="283" key="NewPhpClassDialog" timestamp="1583318679155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578320949075" />
+    <state x="748" y="283" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583318679155" />
+    <state x="596" y="383" key="NewPhpFileDialog" timestamp="1584617119237">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="596" y="383" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1584617119237" />
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583847493845" />
+    <state x="461" y="137" key="SettingsEditor" timestamp="1583830017206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583830017206" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1583929422214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583929422214" />
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1583759628886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583759628886" />
   </component>
 </project>

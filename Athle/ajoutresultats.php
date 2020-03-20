@@ -1,7 +1,36 @@
 <?php
 session_start();
-require "header.php"
-    ?>
+require "fonction.php";
+
+
+if (isset($_GET["id"])) {
+    if (!empty($_GET)) {
+        $id = htmlspecialchars(trim($_GET["id"]));
+    }
+}
+
+$sql = "SELECT * FROM categories";
+$req = $db->prepare($sql);
+$req->execute();
+$categories = [];
+while ($datacateg = $req->fetchObject()){
+    $categories[]=$datacateg;
+}
+
+$sql = "SELECT * FROM resultats WHERE id=:ids;";
+$req = $db->prepare($sql);
+$req->bindParam(":ids", $id);
+$req->execute();
+
+$resultats = $req->fetchObject();
+
+
+require "header.php";
+
+
+
+//var_dump($data);
+?>
 
 
 <!doctype html>
@@ -48,17 +77,35 @@ require "header.php"
 
 
             <div class="form-group row">
+                <label for="categ001" class="col-4 col-form-label">Catégorie:</label>
+                <div class="col-8">
+                    <select type="text" class="form-control" name="categ" value=<?= $resultats->category_id; ?>>
+                        <?php
+                        foreach ($categories as $categ) {
+                            ?>
+                            <option value="<?= $categ->id ?>"><?= $categ->name ?></option>
+                            <?php
+                        }
+                        ?>
+                    </select>
+                </div>
+            </div>
+
+
+            <!--<div class="form-group row">
                 <label for="adresse05" class="col-4 col-form-label">Catégorie:</label>
                 <div class="col-8">
                     <input id="categ18" type="text" name="categ" class="form-control"
                            placeholder="1 -> Hors Stade. 2 -> Stade.">
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group row">
                 <label for="picture" class="col-4 col-form-label">Image:</label>
                 <div class="col-8">
-                    <input name="picture" type="file">
+                    <input type="hidden" value="100000000"> <!--limite le fichier a un certain nombre de KO-->
+                    <input type="file" name="picture">
+                    <input type="submit" name="envoyer" value="Envoyer le fichier">
                 </div>
             </div>
 

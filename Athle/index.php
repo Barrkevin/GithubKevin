@@ -21,13 +21,13 @@ require "header.php";
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="libs/img/femme.jpg" class="d-block w-100" alt="slider1">
+                    <img src="libs/img/athletic.jpg" class="d-block w-100" alt="slider1">
                 </div>
                 <div class="carousel-item">
-                    <img src="libs/img/run.jpg" class="d-block w-100" alt="slider2">
+                    <img src="libs/img/chaussure.jpg" class="d-block w-100" alt="slider2">
                 </div>
                 <div class="carousel-item">
-                    <img src="libs/img/start.jpg" class="d-block w-100" alt="slider3">
+                    <img src="libs/img/pont.jpg" class="d-block w-100" alt="slider3">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -45,35 +45,10 @@ require "header.php";
     <div class="container">
         <div class="row">
             <div id="textphoto" class="col-12 mt-3">
-                <h4>
-                    Pour toutes les competitions les maillots de club sont obligatoires!.
-                </h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam
-                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                    tempora
-                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                    nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem
-                    vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-                    illum
-                    qui dolorem eum fugiat quo voluptas nulla pariatur?
-
-                </p>
+                <a href="attention.png" download>c'est ici pour le ddl</a><br>
+                <a href="https://bases.athle.fr/asp.net/liste.aspx?frmbase=cclubs&frmmode=2&frmespace=&frmtypeclub=M&frmsaison=2019&frmnclub=062085&frmruptures="
+                    target="_blank">
+                    Classement des clubs</a>
             </div>
         </div>
 

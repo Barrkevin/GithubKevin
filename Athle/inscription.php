@@ -121,12 +121,12 @@ if (isset($_POST['forminscription'])) {         /*Reprend les éléments de la p
                 </button>
             </a>
         </div>
+        <?php
+        if(isset($erreur)) {
+            echo '<font color="red">'.$erreur."</font>";
+        }
+        ?>
     </form>
-    <?php
-    if(isset($erreur)) {
-        echo '<font color="red">'.$erreur."</font>";
-    }
-    ?>
 </div>
 
 <?php

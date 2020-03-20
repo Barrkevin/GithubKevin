@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d821bf52-4660-4780-b57c-26deb95ec76e" name="Default Changelist" comment="" />
+    <list default="true" id="d821bf52-4660-4780-b57c-26deb95ec76e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/afficheresultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajoutresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajoutresultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/athle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/athle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/connexion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/headerfooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/headerfooter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/indexmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/indexmap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/inscription.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/inscription.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/resultats.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/resultats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/img/femme.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/img/run.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/._bddproducts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/._mabase.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Schéma 1.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,18 +51,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1XmxvUboebqL8VyoTPg9NGe7T7p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -39,6 +79,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,6 +121,14 @@
       <workItem from="1582197764779" duration="198000" />
       <workItem from="1582198154538" duration="28000" />
       <workItem from="1582207779233" duration="4242000" />
+      <workItem from="1582273833873" duration="1804000" />
+      <workItem from="1582528047062" duration="22999000" />
+      <workItem from="1582557848224" duration="70000" />
+      <workItem from="1582619756674" duration="5684000" />
+      <workItem from="1582635179653" duration="4961000" />
+      <workItem from="1582643950143" duration="99000" />
+      <workItem from="1582702227120" duration="6074000" />
+      <workItem from="1584352229616" duration="19000" />
     </task>
     <servers />
   </component>
@@ -87,13 +136,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1582028784708">
+    <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1582557877058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="213" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582028784708" />
+    <state x="690" y="213" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582557877058" />
+    <state x="754" y="289" key="NewPhpClassDialog" timestamp="1582543626891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="289" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582543626891" />
     <state x="772" y="423" key="NewPhpFileDialog" timestamp="1581951368290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="772" y="423" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581951368290" />
+    <state x="705" y="91" key="SettingsEditor" timestamp="1582634095595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582634095595" />
   </component>
 </project>

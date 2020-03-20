@@ -1,3 +1,14 @@
+
+body{
+    background-image: url(../libs/img/piste.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
 @media screen and (max-width: 575px){
     #container128{
         min-width: 300px;
