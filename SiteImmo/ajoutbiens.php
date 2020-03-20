@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "bdd/FonctionConnect.php";
+$db = connect();
 
 
 if (isset($_GET["id"])) {
@@ -31,7 +32,6 @@ require "Header.php";
 ?>
 
     <body>
-
     <div class="container mt-5">
         <form id="container128" class="offset-sm-2 col-8 bg-white border border-secondary" method="POST"
               action="methodes/MethodeAjouterBiens.php">
@@ -110,7 +110,7 @@ require "Header.php";
                 <button type="submit" class="btn btn-warning w-100">
                     Envoyer
                 </button>
-                <a href="TableauBiens.php">
+                <a href="../TableauBiens.php">
                     <button type="button" class="btn btn-primary w-100 mt-2">
                         Retour
                     </button>

@@ -18,7 +18,7 @@ if (isset($_POST['mailform'])) {
 					<u>Nom de l\'expéditeur :</u>' . $_POST['nom'] . '<br />
 					<u>Mail de l\'expéditeur :</u>' . $_POST['mail'] . '<br />
 					<br />
-					' . nl2br($_POST['message']) . '
+					' . nl2br($_POST['message']) . '  <!--nl2br pour le retour à la ligne-->
 					<br />
 				</div>
 			</body>

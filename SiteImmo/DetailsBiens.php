@@ -1,10 +1,7 @@
 <?php
 session_start();
 require "bdd/FonctionConnect.php";
-<<<<<<< HEAD
 $db = connect();
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 /*var_dump($_GET);*/
 
@@ -43,15 +40,9 @@ require "Header.php"
 
 
         <div class="container text-center">
-<<<<<<< HEAD
             <h1 class="mb-3 mt-3"><strong>
                 <?php echo $data->bname ?></strong></h1>
             <img class="w-100" src="src/img/<?php echo $data->mdphotos ?>"
-=======
-            <h2 class="mb-3 mt-3">
-                <?php echo $data->bname ?></h2>
-            <img class="w-75" src="src/img/<?php echo $data->mdphotos ?>"
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             <br>
             <p class="mt-3"><strong>Catégorie : </strong>
                 <?php echo $data->cname ?></p>
@@ -64,10 +55,7 @@ require "Header.php"
             <p class="mt-3"><strong>Description :</strong></p>
             <p><?php echo $data->bdescription ?></p>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             <td>
                 <?php
                 if (isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
@@ -92,10 +80,7 @@ require "Header.php"
                 ?>
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             <a href="TableauBiens.php" class="btn btn-primary mt-3 mb-3">Retour aux biens</a>
         </div>
     </div>

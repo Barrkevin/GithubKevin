@@ -56,8 +56,17 @@
         }
         ?>
 
-        <a class="ml-2 mt-2" href="mailto:kevin.radosz@gmail.com"><i id="enveloppe" class='uil uil-envelope'></i></a>
-        </ul>
+        <?php
+        if (isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
+
+
+            ?>
+            <a class="ml-2 mt-2" href="mailto:kevin.radosz@gmail.com"><i id="enveloppe"
+                                                                         class='uil uil-envelope'></i></a>
+
+            <?php
+        }
+        ?>
 
     </div>
     <div align="center">
@@ -68,7 +77,6 @@
             <?php
         }
         ?>
-    </div>
     </div>
 </nav>
 

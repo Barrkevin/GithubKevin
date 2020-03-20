@@ -3,11 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3308
-<<<<<<< HEAD
 -- Généré le :  ven. 13 mars 2020 à 07:19
-=======
--- Généré le :  mer. 11 mars 2020 à 09:04
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.4.0
 
@@ -45,22 +41,14 @@ CREATE TABLE IF NOT EXISTS `biensimmo` (
   KEY `biensimmo_map_id` (`map_id`) USING BTREE,
   KEY `biensimmo_category_id` (`category_id`) USING BTREE,
   KEY `media_id` (`media_id`)
-<<<<<<< HEAD
 ) ENGINE=MyISAM AUTO_INCREMENT=423 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-=======
-) ENGINE=MyISAM AUTO_INCREMENT=415 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 --
 -- Déchargement des données de la table `biensimmo`
 --
 
 INSERT INTO `biensimmo` (`id`, `name`, `adresse`, `description`, `category_id`, `map_id`, `media_id`) VALUES
-<<<<<<< HEAD
 (5, 'Appartement neuf', 'Rue voltaire, Vimy', 'Appartement de 80m2 au prix de 100 000€', 1, 1, '1'),
-=======
-(5, 'Appartement rénové', 'Rue voltaire, Vimy', 'Appartement de 65m2', 1, 1, '1'),
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 (6, 'Belle Villa', 'Rue de la murène, Hénin-beaumont', 'Maison de 120m2', 2, 2, '2'),
 (408, 'Maison plein centre', 'Rue du maréchal, Lievin', 'Maison de 80m2', 2, 40, '37'),
 (409, 'Appartement rénové', 'Rue voltaire, Vimy', 'Appartement de 65m2', 1, 41, '38'),
@@ -100,11 +88,7 @@ CREATE TABLE IF NOT EXISTS `map` (
   `latitude` varchar(15) COLLATE utf8mb4_general_ci NOT NULL,
   `longitude` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-<<<<<<< HEAD
 ) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-=======
-) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 --
 -- Déchargement des données de la table `map`
@@ -129,32 +113,19 @@ CREATE TABLE IF NOT EXISTS `media` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `photos` text COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-<<<<<<< HEAD
 ) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-=======
-) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 --
 -- Déchargement des données de la table `media`
 --
 
 INSERT INTO `media` (`id`, `photos`) VALUES
-<<<<<<< HEAD
 (1, 'Appart.jpg'),
 (2, 'M2.jpg'),
 (37, 'House.jpg'),
 (38, 'Build.jpg'),
 (39, 'House2.jpg'),
 (40, 'Build2.jpg');
-=======
-(1, 'A1.jpg'),
-(2, 'Slide3.jpg'),
-(37, 'Slide2.jpg'),
-(38, 'M5.jpg'),
-(39, 'Slide2.jpg'),
-(40, 'A1.jpg');
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 -- --------------------------------------------------------
 
@@ -170,11 +141,7 @@ CREATE TABLE IF NOT EXISTS `membres` (
   `motdepasse` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `role_id` int(11) NOT NULL DEFAULT '2',
   PRIMARY KEY (`id`)
-<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-=======
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 --
 -- Déchargement des données de la table `membres`

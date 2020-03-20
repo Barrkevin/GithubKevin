@@ -1,10 +1,7 @@
 <?php
 session_start();
 require "bdd/FonctionConnect.php";
-<<<<<<< HEAD
 $db = connect();
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 if (isset($_POST['forminscription'])) {         /*Reprend les éléments de la page inscription*/
     $pseudo = htmlspecialchars($_POST['pseudo']);  /*Fonction qui permet d'enlever les caractères html etc
@@ -136,13 +133,8 @@ require "Header.php"
                 </a>
             </div>
             <?php
-<<<<<<< HEAD
             if (isset($erreur)) {
                 echo'<strong><font color="red">'.$erreur.'</font></strong>';
-=======
-            if(isset($erreur)) {
-                echo '<font color="red">'.$erreur."</font>";
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             }
             ?>
         </form>

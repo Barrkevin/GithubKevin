@@ -2,10 +2,7 @@
 session_start();
 
 require "bdd/FonctionConnect.php";
-<<<<<<< HEAD
 $db = connect();
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 
 if (isset($_POST['formconnexion'])) {
@@ -21,11 +18,7 @@ if (isset($_POST['formconnexion'])) {
             $_SESSION['pseudo'] = $userinfo['pseudo'];
             $_SESSION['mail'] = $userinfo['mail'];
             $_SESSION['role'] = $userinfo['role_id'];
-<<<<<<< HEAD
             header('location: TableauBiens.php');
-=======
-            header("Location: Index.php");
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
         } else {
             $erreur = "Mauvais mail ou mot de passe !";
         }
@@ -72,7 +65,6 @@ require "Header.php"
                     </button>
                 </a>
             </div>
-<<<<<<< HEAD
 
         <?php
         if (isset($erreur)) {
@@ -81,16 +73,6 @@ require "Header.php"
         ?>
         </form>
     </div>
-=======
-        </form>
-        <?php
-        if (isset($erreur)) {
-            echo '<font color="red">' . $erreur . "</font>";
-        }
-        ?>
-    </div>
-
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     </body>
 
 <?php

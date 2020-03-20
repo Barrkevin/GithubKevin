@@ -2,80 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb435b21-217a-4bcc-a38c-042246c50ea3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Athle/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/afficheresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/afficheresultats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/ajoutresultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/ajoutresultats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/athle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/athle.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/connexion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/headerfooter.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/headerfooter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/indexmap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/indexmap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/inscription.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/inscription.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/css/resultats.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/css/resultats.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/libs/img/femme.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/libs/img/run.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/resultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/resultats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Athle/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Athle/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crud/._bddproducts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crud/._mabase.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crud/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Cahierdescharges.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Devis.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Maquette.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Planning.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Projetvelo/._Schéma 1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AjoutBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/AjoutBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConnexionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ConnexionUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DetailsBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/DetailsBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InscriptionUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/InscriptionUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SupprimeBiens.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TableauBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/TableauBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpdateBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/UpdateBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpdateCoordoneesBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/UpdateCoordoneesBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UpdatePhotosBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/UpdatePhotosBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/ConfigConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/ConfigConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/FonctionConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/FonctionConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/immo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/immo.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodes/MethodeAjouterBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/methodes/MethodeAjouterBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodes/MethodeUpdateBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/methodes/MethodeUpdateBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodes/MethodeUpdateCoordonneesBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/methodes/MethodeUpdateCoordonneesBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/methodes/MethodeUpdatePhotosBiens.php" beforeDir="false" afterPath="$PROJECT_DIR$/methodes/MethodeUpdatePhotosBiens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Connexion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Connexion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Maps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/bien6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/biens.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/locations.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/appartement.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/maison1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/maison2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/maison3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/maison4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/maison5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien1solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien2solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien3solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien4solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien5solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapbien6solo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/mapjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bien6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/biens.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +133,6 @@
       <workItem from="1583824495229" duration="204000" />
       <workItem from="1583825047047" duration="20000" />
       <workItem from="1583827926031" duration="10815000" />
-<<<<<<< HEAD
       <workItem from="1583916596922" duration="11591000" />
       <workItem from="1583996981232" duration="5812000" />
       <workItem from="1584083243904" duration="634000" />
@@ -198,9 +147,7 @@
       <workItem from="1584689425620" duration="124000" />
       <workItem from="1584690037215" duration="1715000" />
       <workItem from="1584692038747" duration="52000" />
-=======
-      <workItem from="1583916596922" duration="4682000" />
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
+      <workItem from="1584702170052" duration="35000" />
     </task>
     <servers />
   </component>
@@ -224,28 +171,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="283" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583318679155" />
-<<<<<<< HEAD
     <state x="596" y="383" key="NewPhpFileDialog" timestamp="1584617119237">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="596" y="383" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1584617119237" />
-=======
-    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1583847493845">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583847493845" />
     <state x="461" y="137" key="SettingsEditor" timestamp="1583830017206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583830017206" />
-<<<<<<< HEAD
     <state x="532" y="237" key="run.anything.popup" timestamp="1583929422214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583929422214" />
-=======
->>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1583759628886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
