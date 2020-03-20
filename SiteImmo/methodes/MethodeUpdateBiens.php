@@ -1,7 +1,10 @@
 <?php
 
 require "../bdd/FonctionConnect.php";   /*On appelle le fichier config*/
+<<<<<<< HEAD
 $db = connect();
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 
 if (isset($_POST["id"])) {
@@ -54,29 +57,48 @@ if (isset($_POST["long"])) {
 }
 
 
+<<<<<<< HEAD
 $map = "UPDATE map SET latitude=:lat, longitude=:long WHERE map.id = :ids";
 
 
 $req = $db->prepare($map);
 $req->bindParam(':ids', $id_map);
+=======
+$map = "UPDATE map SET latitude=:lat, longitude=:long WHERE map.id=" . $id_map;
+
+
+$req = $db->prepare($map);
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 $req->bindParam(':lat', $latitude);
 $req->bindParam(':long', $longitude);
 $req->execute();
 
 
 //var_dump($_POST);
+<<<<<<< HEAD
 $modifphotos = "UPDATE media SET photos=:picture WHERE media.id = :ids";
 $req = $db->prepare($modifphotos);
 $req->bindParam(':ids', $id_media);
+=======
+$modifphotos = "UPDATE media SET photos=:picture WHERE media.id=" . $id_media;
+$req = $db->prepare($modifphotos);
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 $req->bindParam(':picture', $photos);
 $req->execute();
 
 
+<<<<<<< HEAD
 $modif = "UPDATE biensimmo SET name=:nom, adresse=:adressage, description=:descript, category_id=:categ WHERE biensimmo.id = :ids";
 
 
 $req = $db->prepare($modif);/*-> veut dire va chercher la méthode de l'objet*/
 $req->bindParam(':ids', $id);
+=======
+$modif = "UPDATE biensimmo SET name=:nom, adresse=:adressage, description=:descript, category_id=:categ WHERE biensimmo.id=" . $id;
+
+
+$req = $db->prepare($modif);            /*-> veut dire va chercher la méthode de l'objet*/
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 $req->bindParam(':nom', $name);
 $req->bindParam(':adressage', $adresse);
 $req->bindParam(':descript', $description);

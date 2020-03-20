@@ -93,6 +93,7 @@ require "header.php";
 
 
 
+<<<<<<< HEAD
                 <!--<div class="form-group row">
                     <label for="categ001" class="col-4 col-form-label">Catégorie:</label>
                     <div class="col-8">
@@ -101,6 +102,8 @@ require "header.php";
                 </div>-->
 
 
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
                 <div class="form-group row">
                     <label for="picture" class="col-4 col-form-label">Image:</label>
                     <div class="col-8">

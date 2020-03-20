@@ -71,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Projets/SiteVelo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,7 +79,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -127,8 +131,15 @@
       <workItem from="1582619756674" duration="5684000" />
       <workItem from="1582635179653" duration="4961000" />
       <workItem from="1582643950143" duration="99000" />
+<<<<<<< HEAD
       <workItem from="1582702227120" duration="6074000" />
       <workItem from="1584352229616" duration="19000" />
+=======
+      <workItem from="1582702227120" duration="5762000" />
+      <workItem from="1582712239441" duration="13013000" />
+      <workItem from="1582787301136" duration="21122000" />
+      <workItem from="1582878998641" duration="6584000" />
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     </task>
     <servers />
   </component>
@@ -136,6 +147,7 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1582557877058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,5 +164,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582634095595" />
+=======
+    <state x="550" y="296" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582718277738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="550" y="296" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582718277738" />
+    <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1582719327402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="213" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582719327402" />
+    <state x="754" y="289" key="NewPhpClassDialog" timestamp="1582543626891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="289" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582543626891" />
+    <state x="772" y="423" key="NewPhpFileDialog" timestamp="1582886070373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="772" y="423" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582886070373" />
+    <state x="675" y="91" key="SettingsEditor" timestamp="1582713526121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="675" y="91" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582713526121" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1582794330868">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582794330868" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1582797435061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582797435061" />
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
   </component>
 </project>

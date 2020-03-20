@@ -183,6 +183,7 @@
       <workItem from="1583824495229" duration="204000" />
       <workItem from="1583825047047" duration="20000" />
       <workItem from="1583827926031" duration="10815000" />
+<<<<<<< HEAD
       <workItem from="1583916596922" duration="11591000" />
       <workItem from="1583996981232" duration="5812000" />
       <workItem from="1584083243904" duration="634000" />
@@ -197,6 +198,9 @@
       <workItem from="1584689425620" duration="124000" />
       <workItem from="1584690037215" duration="1715000" />
       <workItem from="1584692038747" duration="52000" />
+=======
+      <workItem from="1583916596922" duration="4682000" />
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     </task>
     <servers />
   </component>
@@ -220,19 +224,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="748" y="283" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583318679155" />
+<<<<<<< HEAD
     <state x="596" y="383" key="NewPhpFileDialog" timestamp="1584617119237">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="596" y="383" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1584617119237" />
+=======
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1583847493845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583847493845" />
     <state x="461" y="137" key="SettingsEditor" timestamp="1583830017206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="137" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583830017206" />
+<<<<<<< HEAD
     <state x="532" y="237" key="run.anything.popup" timestamp="1583929422214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583929422214" />
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
     <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1583759628886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

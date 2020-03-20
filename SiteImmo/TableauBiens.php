@@ -1,7 +1,10 @@
 <?php
 session_start();
 require "bdd/FonctionConnect.php";
+<<<<<<< HEAD
 $db = connect();
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 
 /*Pour aller chercher quelque chose de précis :*/
@@ -44,7 +47,11 @@ require "Header.php";
     <link rel="stylesheet" href="src/css/TableauBiens.css">
     <div class="container">
         <div class="text-center mt-3">
+<<<<<<< HEAD
             <h1><strong>Tableaux des biens</strong></h1>
+=======
+            <h1>Tableaux des biens</h1>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             <?php
             if (isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
 
@@ -86,7 +93,11 @@ require "Header.php";
                     <td><?php echo substr($data->mlong, 0, 6) ?></td>
                     <td><?php echo substr($data->bdescription, 0, 50) ?></td>
                     <td><?php echo $data->cname ?></td>
+<<<<<<< HEAD
                     <td><img class="rounded-circle" src="src/img/<?php echo $data->mdphotos ?>" id="img1" alt="img"></td>
+=======
+                    <td><img src="src/img/<?php echo $data->mdphotos ?>" id="img1" alt="img"></td>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
                     <td>
                         <?php
                         if (isset($_SESSION["role"]) && $_SESSION["role"] == 1) {
@@ -98,7 +109,11 @@ require "Header.php";
                             <button type="button" class="btn btn-success mt-1">Modifier</button>
 
 
+<<<<<<< HEAD
                             <a href="supprimer/SupprimeBiens.php?id=<?php echo $data->bid ?>"
+=======
+                            <a href="SupprimeBiens.php?id=<?php echo $data->bid ?>"
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
                             <button type="button" class="btn btn-warning ml-1 mt-1">Supprimer</button>
 
 

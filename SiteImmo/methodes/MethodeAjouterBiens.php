@@ -1,7 +1,10 @@
 <?php
 
 require "../bdd/FonctionConnect.php";   /*On appelle le fichier config*/
+<<<<<<< HEAD
 $db = connect();
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 
 //var_dump($_POST);
 

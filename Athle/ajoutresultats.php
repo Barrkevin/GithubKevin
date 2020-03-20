@@ -13,8 +13,13 @@ $sql = "SELECT * FROM categories";
 $req = $db->prepare($sql);
 $req->execute();
 $categories = [];
+<<<<<<< HEAD
 while ($datacateg = $req->fetchObject()){
     $categories[]=$datacateg;
+=======
+while ($datacateg = $req->fetchObject()) {
+    $categories[] = $datacateg;
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 }
 
 $sql = "SELECT * FROM resultats WHERE id=:ids;";
@@ -28,11 +33,15 @@ $resultats = $req->fetchObject();
 require "header.php";
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 //var_dump($data);
 ?>
 
 
+<<<<<<< HEAD
 <!doctype html>
 <html lang="fr">
 <head>
@@ -45,6 +54,21 @@ require "header.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+=======
+    <!doctype html>
+    <html lang="fr">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+    </head>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 <body>
 
 <div class="container mt-5">
@@ -121,6 +145,6 @@ require "header.php";
     </form>
 </div>
 
-   <?php
+<?php
 require "footer.php"
 ?>

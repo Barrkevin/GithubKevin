@@ -31,10 +31,19 @@
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu">
+<<<<<<< HEAD
                 <a class="dropdown-item" href="#" id="">Organigrame du club</a>
                 <a class="dropdown-item" href="#" id="">Formulaire d'inscription et réglement</a>
                 <a class="dropdown-item" href="#" id="">Horaires des entrainement</a>
                 <a class="dropdown-item" href="#" id="">Administratif</a>
+=======
+                <a class="dropdown-item" href="organigramme.php" id="">Organigrame du club</a>
+                <a class="dropdown-item" href="formulaire.php" id="">Formulaire d'inscription et réglement</a>
+                <a class="dropdown-item" href="horaires.php" id="">Horaires des entrainement</a>
+                <a class="dropdown-item" href="calendrier.php" id="">Calendrier</a>
+                <a class="dropdown-item" href="administratif.php" id="">Administratif</a>
+                <a class="dropdown-item" href="classement.php" id="">Classement des clubs</a>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             </div>
         </div>
 
@@ -44,8 +53,14 @@
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu">
+<<<<<<< HEAD
                 <a class="dropdown-item" href="" id="">Le Meeting</a>
                 <a class="dropdown-item" href="#" id="">Le programme</a>
+=======
+                <a class="dropdown-item" href="meeting.php" id="">Le Meeting</a>
+                <a class="dropdown-item" href="programme.php" id="">Le programme</a>
+                <a class="dropdown-item" href="albummeeting.php" id="">Albums meeting</a>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             </div>
         </div>
 
@@ -71,15 +86,26 @@
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <div class="dropdown-menu">
+<<<<<<< HEAD
                 <a class="dropdown-item" href="" id="">Formation du jeune athlète</a>
                 <a class="dropdown-item" href="#" id="">Règles des compétitions</a>
                 <a class="dropdown-item" href="#" id="">Officiel</a>
                 <a class="dropdown-item" href="#" id="">Lutte anti dopage</a>
+=======
+                <a class="dropdown-item" href="formation.php" id="">Formation du jeune athlète</a>
+                <a class="dropdown-item" href="regles.php" id="">Règles des compétitions</a>
+                <a class="dropdown-item" href="officiel.php" id="">Officiel</a>
+                <a class="dropdown-item" href="lutte.php" id="">Lutte anti dopage</a>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
             </div>
         </div>
 
 
+<<<<<<< HEAD
 <!--        <a href=""><button class="btn btn-warning ml-2" id="">Cross de la glissoire</button></a>-->
+=======
+        <a href="crossglissoire.php"><button class="btn btn-warning ml-2 mt-2" id="">Cross de la glissoire</button></a>
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
         <a href="resultats.php"><button class="btn btn-warning ml-2 mt-2" id="">Résultats</button></a>
         <a href="contact.php"><button class="btn btn-warning ml-2 mt-2" id="">Contact</button></a>
 

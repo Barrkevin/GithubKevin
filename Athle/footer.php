@@ -2,6 +2,7 @@
 
 ?>
 
+<<<<<<< HEAD
 <footer>
     <div class="container-fluid mt-5 bg-dark" id="hcontainer">
         <nav class="nav nav-pills nav-justified">
@@ -11,6 +12,8 @@
     </div>
 </footer>
 
+=======
+>>>>>>> 6ff2c66c8784082f3756886a28c8c7fcf9a5cc32
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

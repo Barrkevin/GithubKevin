@@ -1,0 +1,47 @@
+<?php
+session_start();
+require "header.php";
+
+?>
+
+
+    <div class="container">
+    <h1></h1>
+    <hr id="hr01">
+
+        <div class="row">
+            <div class="col-">
+
+            </div>
+        </div> <!--fermeture de la première row-->
+
+</div> <!--fermeture du container-->
+
+
+
+<?php
+require "footer.php"
+?>
+
+
+
+Lien bouton + lien + nouvelle fenêtre :
+<a href="" target="_blank">
+                    <button type="button" class="btn btn-dark mt-2"></button>
+                </a>
+
+DDL:
+<a href="" download><button type="button" class="btn btn-dark mt-2"></button></a>
+
+Carroussel :
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="libs/img/organigramme.jpg" class="d-block w-100" alt="organigramme">
+            </div>
+        </div>
+    </div>
+
+    row:
+
+

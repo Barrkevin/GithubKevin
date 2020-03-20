@@ -32,6 +32,8 @@ require "templates/main/head.php";
             <p>Suis sanctissime tenuerunt Quae repulsum et omnis affervescentem signis quis totumque tenuerunt sustinerent et et urbis repulsum Byzantii repulsum omnis cum omnis exhausti in quis impetus ornatissimam ornanemta ornatissimam repulsum totumque urbem et custodita tenuerunt signis signa Byzantiorum impetus repulsum Byzantiorum armatum maximis illa et custodita sumptibus Byzantiorum in erumpentem atque illi ignorat quis tenuerunt affervescentem Mithridaticos totumque atque cervicibus custodita signa omnis impetus et ornatissimam Pontum totumque Asiam sustinerent Asiam postea ore erumpentem vero maximis Asiam signa tum vero et sanctissime illa atque sumptibus in interclusum fuisse repulsum atque Byzantii ore ore fuisse et suis signa tenuerunt et sanctissime.</p>
         </div>
     </div>
+
+
     <div class="row">
         <div id="textsit" class="col-12 mt-5 mx-auto h4">Nous situer
         </div>

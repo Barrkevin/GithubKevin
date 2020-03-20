@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "config.php";
+require "fonction.php";
 
 /*var_dump($_GET);*/
 
@@ -10,19 +10,6 @@ if (isset($_GET["id"])) {   /*le isset vérifie que le transfert se fait bien*/
     }   /*trim pour effacer les espaces*/
 }
 
-
-function connect()
-{
-    try {
-        $db = new PDO('mysql:host=' . LOCALHOST . ';dbname=' . DATABASE . ';charset=utf8', USER, MDP);
-        /*echo 'ok';*/
-        return $db;
-    } catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
-
-$db = connect();
 
 $sql = "select resultats.id as rid,resultats.name as rname,resultats.description,categories.name as cname,image,categories.id  from resultats
 inner join categories on resultats.category_id = categories.id where resultats.id=:ids";
